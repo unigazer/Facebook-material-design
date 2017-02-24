@@ -1,0 +1,409 @@
+/* i really want this to be global */
+
+/*Suggeste Pages & Suggested Groups*/ 
+.ego_section, #GroupsRHCSuggestionSection {
+  display: none !important;
+}
+
+._4-u2 ._5v6e .cardRightCol ._4-u8 {
+   height: inherit !important;
+}
+
+.newsFeedComposer ._5v6e .home_right_column, ._268y {
+    min-height: inherit !important;
+}
+
+._583- {
+    background: none !important;
+    border-radius: 100px !important;
+}
+._583- img {
+    border-radius: 100px !important;
+}
+
+._53jh {
+    background-color:  /*[[header-color]]*/ !important;
+    background-image: none !important;
+    border-bottom: 1px solid  /*[[header-color]]*/ !important;
+}
+._6wl {
+    background: #64DD17 !important;
+    background-color: #64DD17 !important;
+    border-color: #64DD17 !important;
+}
+._6wl:hover {
+    background: #8BC34A !important;
+    background-color: #8BC34A !important;
+    border-color: #8BC34A !important;
+}
+/* Comments */
+
+.UFICommentContent {
+    font-weight: 600 !important;
+}
+/* Messages */
+
+._2w7 img {
+    border-radius: 50px !important;
+}
+._1ht1._1ht2 {
+    background-color: /*[[header-color]]*/ !important;
+}
+._1ht7,
+._1htf span {
+    color: #000000 !important;
+}
+/* Background color */
+
+._5vb_,
+._5vb_ #contentCol {
+    background-color: #f1f1f1 !important;
+}
+/* Profile */
+
+.profilePicThumb img {
+    border-radius: 100px !important;
+    border: none !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+}
+._3hv,
+._bth {
+    border-radius: 60px !important;
+    border: none !important;
+}
+._3hvt:after,
+._38vo:after {
+    border: none !important;
+}
+._55lt img {
+    border-radius: 100px !important;
+    border: none !important;
+}
+._31o4,
+._4tdw img {
+    border-radius: 60px !important;
+    border: none !important;
+}
+._3s6x {
+    background: none !important;
+    color: #F5F5F5 !important;
+    text-shadow: 0px 0px 7px #000000 !important;
+}
+._34mw {
+    font-weight: bolder !important;
+    text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}
+._7ls,
+._s0,
+._7l2,
+._rw img {
+    border-radius: 60px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border: none !important;
+}
+.img .UFIActorImage ._54ru img {
+    border-radius: 60px !important;
+}
+._55lq:after {
+    border: none !important;
+}
+.fbChatSidebar {
+    background-color: #FFFFFF !important;
+}
+#fbTimelineHeadline .profilePicThumb {
+    background: none !important;
+}
+
+._5clo {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+._5clp {
+    outline: none !important;
+}
+/* Facebook header */
+
+._2s1x ._2s1y {
+    background-color: /*[[header-color]]*/ !important;
+    border-bottom: /*[[header-color]]*/ !important;
+    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
+}
+._4-u2 {
+    border-radius: 0px !important;
+}
+._1k67 ._2s25:after {
+    border: none !important;
+}
+._5v9k .UFIAddComment .UFIImageBlockImage:after,
+._5v9k .UFIComment .UFIImageBlockImage:after {
+    border: none !important;
+    border-radius: 60px !important;
+}
+._698 ._5q6s::after {
+    border: none !important;
+}
+._1qp6 .fbProfileBrowserListContainer .fbProfileBrowserListItem,
+html ._262m ._698 {
+    border: none !important;
+}
+html ._5k35 ._5k3a,
+._5mub,
+._5mtz {
+    border: none !important;
+}
+._5mt- {
+    outline: none !important;
+}
+.art_border:after,
+._gx8 .img,
+._42xb,
+.music_artwork,
+._5d3_::after,
+._gx8::after {
+    border: none !important;
+    border-radius: 100px !important;
+}
+._14b9 ._r95,
+._14b9 ._gx6,
+._14b9 ._r95,
+._6l-:after {
+    border: none !important;
+}
+._5frj::after {
+    border: none !important;
+}
+._2cpc::after,
+._35za {
+    border: none !important;
+}
+/* Comments color */
+
+._5vsj .UFIRow {
+    background-color: #F5F5F5 !important;
+}
+._54ru {
+    border-radius: 60px !important;
+}
+/* Shadows on boxes */
+
+._5pcr,
+._4-u2,
+._2s1x,
+._3i9 {
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+      /* Animation */
+    
+    -webkit-animation-name: zoomIn !important;
+    -moz-animation-name: zoomIn !important;
+    animation-name: zoomIn !important;
+    -webkit-animation-duration: 600ms !important;
+    -moz-animation-duration: 600ms !important;
+    animation-duration: 600ms !important;
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+}
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    -moz-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+/* Additional animation */
+
+.pam {
+    -webkit-animation-name: fadeIn !important;
+    -moz-animation-name: fadeIn !important;
+    animation-name: fadeIn !important;
+    -webkit-animation-duration: 1s !important;
+    -moz-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* End of the addition animation */
+
+html ._6-d .fbTimelineSection {
+    border: none !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+}
+._tun,
+._kj3,
+._z6j {
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border: none !important;
+}
+/* The "Post" button */
+
+._4jy1,
+._1yw,
+._42g-,
+._5vwy ._13xf,
+._xag,
+._xah,
+.uiButtonConfirm,
+._2v5c._4vb9,
+._4vb9 ._xh9,
+.uiMenuItem a:hover,
+._xag ._558b:hover,
+._54ne:hover,
+._54nc:hover {
+    background-color: #03a9f4 !important;
+    border-color: #03a9f4 !important;
+}
+._4jy1:hover,
+._xag:hover,
+._xah:hover,
+.uiButtonConfirm:hover,
+._42g-:hover {
+    background-color: #028bca !important;
+    border-color: #028bca !important;
+}
+/* Pages */
+
+._3f-h._3f-i {
+    border-color: #03a9f4 !important;
+}
+._qa1 {
+    border: none !important;
+}
+/* Some adittional fixes */
+
+._nft,
+._3rt8,
+._412e:after,
+.fbxWelcomeBoxBlock:after {
+    border: none !important;
+    box-shadow: none !important;
+}
+/*==========================================================
+
+	     Facebook Animated Reactions
+                   Version: 1.0
+	By WhyseMan , forked from BangDroid
+
+Based on 'Facebook - Pokémon Emojis by Scheliux' but
+modified; the big emojis are animated!!
+
+The author said that the code is free to modify and redistribute 
+so I made reactions that you see on Android and iOS applications.
+
+===========================================================*/
+/*create root class*/
+
+:root {
+    --big-emojis: url('http://i.imgur.com/qy5Tcoa.gif');
+}
+/*Widen reactions popup*/
+
+._iu- {
+    width: 335px;
+}
+._iuw,
+._9-_,
+._93m,
+._2jry {
+    width: 56px !important;
+}
+/* BIG EMOJIS */
+/*Like*/
+
+._2jry ._9-_._3j7l {
+    background-image: var(--big-emojis);
+    background-position: 1px -7px;
+}
+/*Love*/
+
+._2jry ._9-_._3j7m {
+    background-image: var(--big-emojis);
+    background-position: -68px -6px;
+}
+/*Haha*/
+
+._2jry ._9-_._3j7o {
+    background-image: var(--big-emojis);
+    background-position: -130px -7px;
+}
+/*Wow*/
+
+._2jry ._9-_._3j7n {
+    background-image: var(--big-emojis);
+    background-position: -190px -7px;
+}
+/*Sad*/
+
+._2jry ._9-_._3j7r {
+    background-image: var(--big-emojis);
+    background-position: -250px -7px;
+}
+/*Angry*/
+
+._2jry ._9-_._3j7q {
+    background-image: var(--big-emojis);
+    background-position: -312px -7px;
+}
+/* Features Test */
+/* Chat */
+
+._2v5j {
+    opacity: 0.9;
+}
+._5w1r span {
+    opacity: 1;
+    font-weight: bold !important;
+}
+/* Notifications Avatars */
+
+._ors ._33h {
+    border-radius: 50px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+}
+
+/* Video player */
+
+._gn4, ._i5q ._2-mn, ._i5q ._2-mp, ._gn0._gn1 ._gn5  {
+    background-color: /*[[header-color]]*/ !important;
+}
