@@ -1,8 +1,13 @@
 /* i really want this to be global */
+/*Suggested Pages & Suggested Groups*/
 
-/*Suggeste Pages & Suggested Groups*/ 
-.ego_section, #GroupsRHCSuggestionSection {
-  display: none !important;
+.ego_section,
+#GroupsRHCSuggestionSection,
+._20i8,
+._1nao,
+._38pe,
+._4-u3 ._32x0 {
+    display: none !important;
 }
 
 ._4-u2 ._5v6e .cardRightCol ._4-u8 {
@@ -22,9 +27,9 @@
 }
 
 ._53jh {
-    background-color:  /*[[header-color]]*/ !important;
+    background-color:  #039BE5 !important;
     background-image: none !important;
-    border-bottom: 1px solid  /*[[header-color]]*/ !important;
+    border-bottom: 1px solid  #039BE5 !important;
 }
 ._6wl {
     background: #64DD17 !important;
@@ -47,7 +52,7 @@
     border-radius: 50px !important;
 }
 ._1ht1._1ht2 {
-    background-color: /*[[header-color]]*/ !important;
+    background-color: #039BE5 !important;
 }
 ._1ht7,
 ._1htf span {
@@ -73,11 +78,8 @@
     border: none !important;
 }
 ._3hvt:after,
-._38vo:after {
-    border: none !important;
-}
-._55lt img {
-    border-radius: 100px !important;
+._38vo:after,
+._5z79::before {
     border: none !important;
 }
 ._31o4 {
@@ -87,6 +89,9 @@
 ._4ld-,
 ._33h._33h,
 ._54ru,
+._55lt img,
+._2akn img,
+._4v9u img,
 ._4tdw img {
     border-radius: 60px !important;
     border: none !important;
@@ -109,7 +114,7 @@
 ._s0,
 ._7l2,
 ._rw img {
-    border-radius: 60px !important;
+    border-radius: 100px !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
     border: none !important;
 }
@@ -137,9 +142,9 @@
 /* Facebook header */
 
 ._2s1x ._2s1y {
-    background-color: /*[[header-color]]*/ !important;
-    border-bottom: /*[[header-color]]*/ !important;
-    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
+    background-color: #039BE5 !important;
+    border-bottom: #039BE5 !important;
+    box-shadow: 0 4px 4px -2px #039BE5 !important;
 }
 ._4-u2 {
     border-radius: 0px !important;
@@ -168,13 +173,17 @@ html ._5k35 ._5k3a,
     outline: none !important;
 }
 .art_border:after,
-._gx8 .img,
 ._42xb,
-.music_artwork,
-._5d3_::after,
-._gx8::after {
+.music_artwork
+ {
     border: none !important;
     border-radius: 100px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+}
+._5d3_::after,
+._gx8::after,
+._4cbv {
+    border: none !important; 
 }
 ._14b9 ._r95,
 ._14b9 ._gx6,
@@ -201,7 +210,6 @@ html ._5k35 ._5k3a,
 
 ._5pcr,
 ._4-u2,
-._2s1x,
 ._3i9 {
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
       /* Animation */
@@ -281,6 +289,40 @@ html ._5k35 ._5k3a,
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
+/* Chat effect */
+
+._d97,
+._d97 span {
+    -webkit-animation-name: fadeIn !important;
+    -moz-animation-name: fadeIn !important;
+    animation-name: fadeIn !important;
+    -webkit-animation-duration: 300ms !important;
+    -moz-animation-duration: 300ms !important;
+    animation-duration: 300ms !important;
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
 /* End of the addition animation */
 
 html ._6-d .fbTimelineSection {
@@ -304,6 +346,8 @@ html ._6-d .fbTimelineSection {
 .uiButtonConfirm,
 ._2v5c._4vb9,
 ._4vb9 ._xh9,
+.pop_content h2.dialog_title,
+._206m .fbNubFlyoutTitlebar,
 .uiMenuItem a:hover,
 ._xag ._558b:hover,
 ._54ne:hover,
@@ -321,7 +365,8 @@ html ._6-d .fbTimelineSection {
 }
 /* Pages */
 
-._3f-h._3f-i {
+._3f-h._3f-i,
+._1i81 {
     border-color: #03a9f4 !important;
 }
 ._qa1 {
@@ -335,6 +380,9 @@ html ._6-d .fbTimelineSection {
 .fbxWelcomeBoxBlock:after {
     border: none !important;
     box-shadow: none !important;
+}
+._3yq- {
+    padding: 0 !important;
 }
 /*==========================================================
 
@@ -352,7 +400,7 @@ so I made reactions that you see on Android and iOS applications.
 /*create root class*/
 
 :root {
-    --big-emojis: url('http://i.imgur.com/qy5Tcoa.gif');
+    --big-emojis: url('https://i.imgur.com/qy5Tcoa.gif');
 }
 /*Widen reactions popup*/
 
@@ -421,7 +469,7 @@ so I made reactions that you see on Android and iOS applications.
 /* Video player */
 
 ._gn4, ._i5q ._2-mn, ._i5q ._2-mp, ._gn0._gn1 ._gn5  {
-    background-color: /*[[header-color]]*/ !important;
+    background-color: #039BE5 !important;
 }
 /* Pictures */
 
@@ -461,6 +509,40 @@ so I made reactions that you see on Android and iOS applications.
     animation-name: fadeIn;
 }
 /* Colors on borders */
+
 ._4-u2 {
- border-top: 1px solid /*[[header-color]]*/ !important;
+ border-top: 1px solid #039BE5 !important;
+}
+/* Glowing status indicator */
+
+._568z span {
+    -webkit-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
+    -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
+    box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
+    /*animation:pulse 2s infinite alternate;*/
+}
+
+/*@keyframes pulse {
+  from { box-shadow:0px 0px 5px 1px rgb(66, 183, 42); }
+  to { box-shadow: 0px 0px 10px 1px rgb(66, 183, 42); }
+}*/
+/* Pictures scale */
+
+#u_0_2k,
+._53s,
+.fbPhotoCurationControlWrapper,
+._2eea
+{
+    transform: scale(1) !important;
+    transition: 300ms all ease-in-out !important;
+}
+#u_0_2k:hover,
+._53s:hover,
+.fbPhotoCurationControlWrapper:hover,
+._2eea:hover 
+{
+    transform: scale(1.2) !important;
+    transition: 300ms all ease-in-out !important;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
+    z-index: 1 !important;
 }
