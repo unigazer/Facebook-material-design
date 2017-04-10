@@ -1,4 +1,5 @@
 /* i really want this to be global */
+
 /*Suggested Pages & Suggested Groups*/
 
 .ego_section,
@@ -27,9 +28,9 @@
 }
 
 ._53jh {
-    background-color:  #039BE5 !important;
+    background-color:  /*[[header-color]]*/ !important;
     background-image: none !important;
-    border-bottom: 1px solid  #039BE5 !important;
+    border-bottom: 1px solid  /*[[header-color]]*/ !important;
 }
 ._6wl {
     background: #64DD17 !important;
@@ -52,7 +53,7 @@
     border-radius: 50px !important;
 }
 ._1ht1._1ht2 {
-    background-color: #039BE5 !important;
+    background-color: /*[[header-color]]*/ !important;
 }
 ._1ht7,
 ._1htf span {
@@ -142,9 +143,9 @@
 /* Facebook header */
 
 ._2s1x ._2s1y {
-    background-color: #039BE5 !important;
-    border-bottom: #039BE5 !important;
-    box-shadow: 0 4px 4px -2px #039BE5 !important;
+    background-color: /*[[header-color]]*/ !important;
+    border-bottom: /*[[header-color]]*/ !important;
+    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
 }
 ._4-u2 {
     border-radius: 0px !important;
@@ -372,6 +373,14 @@ html ._6-d .fbTimelineSection {
 ._qa1 {
     border: none !important;
 }
+
+/* Seen */
+
+._510g {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
 /* Some adittional fixes */
 
 ._nft,
@@ -469,7 +478,7 @@ so I made reactions that you see on Android and iOS applications.
 /* Video player */
 
 ._gn4, ._i5q ._2-mn, ._i5q ._2-mp, ._gn0._gn1 ._gn5  {
-    background-color: #039BE5 !important;
+    background-color: /*[[header-color]]*/ !important;
 }
 /* Pictures */
 
@@ -511,7 +520,7 @@ so I made reactions that you see on Android and iOS applications.
 /* Colors on borders */
 
 ._4-u2 {
- border-top: 1px solid #039BE5 !important;
+ border-top: 1px solid /*[[header-color]]*/ !important;
 }
 /* Glowing status indicator */
 
