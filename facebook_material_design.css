@@ -1,16 +1,36 @@
-/* i really want this to be global */
+@-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/) 
+{
 
 /*Suggested Pages & Suggested Groups*/
 
 .ego_section,
 #GroupsRHCSuggestionSection,
+/* Ads. Well... at least some of them. They are probably using Math.random(). If I still see too much ads, then this id's are useless and I will delete them. */
+#u_jsonp_1_q,
+#u_jsonp_2_q,
+#u_jsonp_3_h,
+#u_jsonp_4_o,
+#u_jsonp_5_g,
+#u_jsonp_5_1g,
+#u_jsonp_6_q,
+#u_jsonp_7_q,
+#u_jsonp_7_1,
+#u_jsonp_8_q,
+#u_jsonp_8_9,
+#u_jsonp_9_q,
+#u_jsonp_9_1,
+#u_jsonp_10_q,
+#u_ps_jsonp_27_0_19,
+#u_jsonp_30_h,
+#u_jsonp_31_o,
 ._20i8,
 ._1nao,
 ._38pe,
-._4-u3 ._32x0 {
-    display: none !important;
+._4-u3 ._32x0,
+._3lkn {
+    display: /*[[toggle-display]]*/;
 }
-
+  
 ._4-u2 ._5v6e .cardRightCol ._4-u8 {
    height: inherit !important;
 }
@@ -31,6 +51,7 @@
     background-color:  /*[[header-color]]*/ !important;
     background-image: none !important;
     border-bottom: 1px solid  /*[[header-color]]*/ !important;
+    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
 }
 ._6wl {
     background: #64DD17 !important;
@@ -46,6 +67,16 @@
 
 .UFICommentContent {
     font-weight: 600 !important;
+}
+._5vsj.UFIContainer .UFIReplyList ._4oep._2o9m:after,
+._5vsj.UFIContainer .UFIReplyList ._4oep._4204:after {
+    border-left: 2px dashed #039BE5 !important;
+}
+
+._5vsj.UFIContainer .UFIReplyList ._4oep {
+    border-left: 2px dashed #039BE5 !important;
+    margin-left: -2px !important;
+    padding-left: 8px !important;
 }
 /* Messages */
 
@@ -142,7 +173,9 @@
 }
 /* Facebook header */
 
-._2s1x ._2s1y {
+._2s1x ._2s1y,
+._zpj,
+#booklet #pageheader {
     background-color: /*[[header-color]]*/ !important;
     border-bottom: /*[[header-color]]*/ !important;
     box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
@@ -215,9 +248,9 @@ html ._5k35 ._5k3a,
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
       /* Animation */
     
-    -webkit-animation-name: fadeInUp !important;
-    -moz-animation-name: fadeInUp !important;
-    animation-name: fadeInUp !important;
+    -webkit-animation-name: /*[[toggle-animation]]*/;
+    -moz-animation-name: /*[[toggle-animation]]*/;
+    animation-name: /*[[toggle-animation]]*/;
     -webkit-animation-duration: 600ms !important;
     -moz-animation-duration: 600ms !important;
     animation-duration: 600ms !important;
@@ -254,11 +287,12 @@ html ._5k35 ._5k3a,
 }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+  -webkit-animation-name: /*[[toggle-animation]]*/;
+  animation-name: /*[[toggle-animation]]*/;
 }
 /* Additional animation */
 
+.UFICommentBody span,
 .pam {
     -webkit-animation-name: fadeIn !important;
     -moz-animation-name: fadeIn !important;
@@ -352,17 +386,21 @@ html ._6-d .fbTimelineSection {
 .uiMenuItem a:hover,
 ._xag ._558b:hover,
 ._54ne:hover,
-._54nc:hover {
-    background-color: #03a9f4 !important;
-    border-color: #03a9f4 !important;
+._54nc:hover,
+._alf:hover {
+    background-color: #0084ff !important;
+    border-color: #0084ff !important;
+    transition: all 300ms ease-in-out;
 }
 ._4jy1:hover,
 ._xag:hover,
 ._xah:hover,
 .uiButtonConfirm:hover,
 ._42g-:hover {
-    background-color: #028bca !important;
-    border-color: #028bca !important;
+    background-color: #0074db !important;
+    border-color: #0074db !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    transition: all 300ms ease-in-out;
 }
 /* Pages */
 
@@ -373,18 +411,28 @@ html ._6-d .fbTimelineSection {
 ._qa1 {
     border: none !important;
 }
+/* Gropus */
+/* Add members to the groups */
 
+._2-fx {
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px -2px #bfbfbf;
+}
+div.uiTypeaheadView .selected {
+    background-color: #0084ff !important;
+    transition: all 300ms ease-in-out;
+}
 /* Seen */
 
 ._510g {
     color: #000000 !important;
     font-weight: bold;
 }
-
 /* Some adittional fixes */
 
 ._nft,
 ._3rt8,
+._2hma,
 ._412e:after,
 .fbxWelcomeBoxBlock:after {
     border: none !important;
@@ -392,6 +440,26 @@ html ._6-d .fbTimelineSection {
 }
 ._3yq- {
     padding: 0 !important;
+}
+._3_gi .uiSearchInput::after,
+._3_gi .uiTypeahead::after,
+._3_gi ._58ak::after {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(0, 0, 0, .30) !important;
+}
+.menu_login_container .login_form_label_field a {
+    color: #ffffff !important;
+}
+._517h:hover, ._59pe:focus, ._59pe:hover {
+    box-shadow: 0px 4px 4px -2px #bfbfbf;
+}
+/* Some adittional fixes - inbox profile pics on main page */
+._1y2l ._4qeb {
+    height: inherit !important;
+    width: 100% !important;
+}
+._1y2l ._4qeb>div {
+    margin: 0 !important;
 }
 /*==========================================================
 
@@ -463,7 +531,7 @@ so I made reactions that you see on Android and iOS applications.
 /* Chat */
 
 ._2v5j {
-    opacity: 0.9;
+    opacity: /*[[toggle-chat]]*/;
 }
 ._5w1r span {
     opacity: 1;
@@ -477,8 +545,22 @@ so I made reactions that you see on Android and iOS applications.
 }
 /* Video player */
 
-._gn4, ._i5q ._2-mn, ._i5q ._2-mp, ._gn0._gn1 ._gn5  {
-    background-color: /*[[header-color]]*/ !important;
+._gn4,
+._i5q ._2-mn,
+._i5q ._2-mp,
+._gn0._gn1 ._gn5 {
+    background-color: #039BE5 !important;
+}
+._38a2 {
+    transition: 300ms all ease-in-out !important;
+}
+._38a2:hover {
+    transition: 300ms all ease-in-out !important;
+    box-shadow: 0 0px 10px 5px /*[[header-color]]*/ !important;
+    z-index: 1000 !important;
+}
+._5g7d {
+    box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
 }
 /* Pictures */
 
@@ -520,7 +602,7 @@ so I made reactions that you see on Android and iOS applications.
 /* Colors on borders */
 
 ._4-u2 {
- border-top: 1px solid /*[[header-color]]*/ !important;
+    border-top: 2px solid /*[[header-color]]*/ !important;
 }
 /* Glowing status indicator */
 
@@ -554,4 +636,18 @@ so I made reactions that you see on Android and iOS applications.
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
+}
+/* Feeling/Activity, Check In */
+._599m {
+    border: none !important;
+    transition: all 300ms ease-in-out !important;
+    background-color: inherit !important;
+    
+}
+._599m:hover,
+._599m:active {
+    background-color: #039BE5 !important;
+    border: none !important;
+    transition: all 300ms ease-in-out !important;
+}
 }
