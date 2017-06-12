@@ -1,10 +1,12 @@
-@-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/) 
+@-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/")
 {
 
 /*Suggested Pages & Suggested Groups*/
 
-.ego_section,
+  .ego_section,
 #GroupsRHCSuggestionSection,
+#AssistiveNubsPagelet,
+._31qy,
 /* Ads. Well... at least some of them. They are probably using Math.random(). If I still see too much ads, then this id's are useless and I will delete them. */
 #u_jsonp_1_q,
 #u_jsonp_2_q,
@@ -174,7 +176,9 @@
 /* Facebook header */
 
 ._2s1x ._2s1y,
+._4ee_,
 ._zpj,
+._1l-e,
 #booklet #pageheader {
     background-color: /*[[header-color]]*/ !important;
     border-bottom: /*[[header-color]]*/ !important;
@@ -242,6 +246,8 @@ html ._5k35 ._5k3a,
 }
 /* Shadows on boxes */
 
+._4-u8,
+._h7n,
 ._5pcr,
 ._4-u2,
 ._3i9 {
@@ -375,6 +381,7 @@ html ._6-d .fbTimelineSection {
 ._4jy1,
 ._1yw,
 ._42g-,
+._38d2,
 ._5vwy ._13xf,
 ._xag,
 ._xah,
@@ -383,6 +390,8 @@ html ._6-d .fbTimelineSection {
 ._4vb9 ._xh9,
 .pop_content h2.dialog_title,
 ._206m .fbNubFlyoutTitlebar,
+._146s ._5dwo,
+._2qix,
 .uiMenuItem a:hover,
 ._xag ._558b:hover,
 ._54ne:hover,
@@ -396,7 +405,10 @@ html ._6-d .fbTimelineSection {
 ._xag:hover,
 ._xah:hover,
 .uiButtonConfirm:hover,
-._42g-:hover {
+._42g-:hover,
+._38d2:hover,
+._146s ._5dwo:hover,
+._2qix:hover {
     background-color: #0074db !important;
     border-color: #0074db !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -408,7 +420,8 @@ html ._6-d .fbTimelineSection {
 ._1i81 {
     border-color: #03a9f4 !important;
 }
-._qa1 {
+._qa1,
+._2-0o {
     border: none !important;
 }
 /* Gropus */
@@ -420,6 +433,7 @@ html ._6-d .fbTimelineSection {
 }
 div.uiTypeaheadView .selected {
     background-color: #0084ff !important;
+    border-color: #0084ff !important;
     transition: all 300ms ease-in-out;
 }
 /* Seen */
@@ -476,9 +490,9 @@ so I made reactions that you see on Android and iOS applications.
 ===========================================================*/
 /*create root class*/
 
-:root {
+/*:root {
     --big-emojis: url('https://i.imgur.com/qy5Tcoa.gif');
-}
+}*/
 /*Widen reactions popup*/
 
 ._iu- {
@@ -494,37 +508,37 @@ so I made reactions that you see on Android and iOS applications.
 /*Like*/
 
 ._2jry ._9-_._3j7l {
-    background-image: var(--big-emojis);
+    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
     background-position: 1px -7px;
 }
 /*Love*/
 
 ._2jry ._9-_._3j7m {
-    background-image: var(--big-emojis);
+    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
     background-position: -68px -6px;
 }
 /*Haha*/
 
 ._2jry ._9-_._3j7o {
-    background-image: var(--big-emojis);
+    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
     background-position: -130px -7px;
 }
 /*Wow*/
 
 ._2jry ._9-_._3j7n {
-    background-image: var(--big-emojis);
+    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
     background-position: -190px -7px;
 }
 /*Sad*/
 
 ._2jry ._9-_._3j7r {
-    background-image: var(--big-emojis);
+    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
     background-position: -250px -7px;
 }
 /*Angry*/
 
 ._2jry ._9-_._3j7q {
-    background-image: var(--big-emojis);
+    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
     background-position: -312px -7px;
 }
 /* Features Test */
@@ -549,7 +563,7 @@ so I made reactions that you see on Android and iOS applications.
 ._i5q ._2-mn,
 ._i5q ._2-mp,
 ._gn0._gn1 ._gn5 {
-    background-color: #039BE5 !important;
+    background-color: /*[[header-color]]*/ !important;
 }
 ._38a2 {
     transition: 300ms all ease-in-out !important;
@@ -632,22 +646,34 @@ so I made reactions that you see on Android and iOS applications.
 .fbPhotoCurationControlWrapper:hover,
 ._2eea:hover 
 {
-    transform: scale(1.2) !important;
+    transform: /*[[toggle-scale]]*/;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
 }
 /* Feeling/Activity, Check In */
-._599m {
+._599m,
+._5u91 {
     border: none !important;
     transition: all 300ms ease-in-out !important;
     background-color: inherit !important;
     
 }
 ._599m:hover,
-._599m:active {
+._599m:active,
+._5u91:hover, 
+._5u91:active {
     background-color: #039BE5 !important;
     border: none !important;
     transition: all 300ms ease-in-out !important;
+}
+/* Page plugins (Embedded on other websites) */
+
+._1drm._1ds3 ._1drn,
+._54ru,
+._5pat ._5sq7 {
+    border-radius: 100px !important;
+    box-shadow: 0px 4px 4px -2px #bfbfbf !important;
+    outline: none !important;
 }
 }
