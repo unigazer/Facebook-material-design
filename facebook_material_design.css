@@ -28,8 +28,14 @@
 ._1nao,
 ._38pe,
 ._4-u3 ._32x0,
-._3lkn {
+._3lkn,
+._1-ib,
+.home_right_column {
     display: /*[[toggle-display]]*/;
+}
+
+._64b {
+    padding: 0 !important;
 }
   
 ._4-u2 ._5v6e .cardRightCol ._4-u8 {
@@ -537,37 +543,37 @@ so I made reactions that you see on Android and iOS applications.
 /*Like*/
 
 ._2jry ._9-_._3j7l {
-    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
+    background-image: /*[[enable-reactions]]*/;
     background-position: 1px -7px;
 }
 /*Love*/
 
 ._2jry ._9-_._3j7m {
-    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
+    background-image: /*[[enable-reactions]]*/;
     background-position: -68px -6px;
 }
 /*Haha*/
 
 ._2jry ._9-_._3j7o {
-    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
+    background-image: /*[[enable-reactions]]*/;
     background-position: -130px -7px;
 }
 /*Wow*/
 
 ._2jry ._9-_._3j7n {
-    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
+    background-image: /*[[enable-reactions]]*/;
     background-position: -190px -7px;
 }
 /*Sad*/
 
 ._2jry ._9-_._3j7r {
-    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
+    background-image: /*[[enable-reactions]]*/;
     background-position: -250px -7px;
 }
 /*Angry*/
 
 ._2jry ._9-_._3j7q {
-    background-image: url('https://i.imgur.com/qy5Tcoa.gif');
+    background-image: /*[[enable-reactions]]*/;
     background-position: -312px -7px;
 }
 /* Features Test */
@@ -675,7 +681,7 @@ so I made reactions that you see on Android and iOS applications.
 .fbPhotoCurationControlWrapper:hover,
 ._2eea:hover 
 {
-    transform: scale(1.2) !important;
+    transform: /*[[toggle-scale]]*/ !important;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
