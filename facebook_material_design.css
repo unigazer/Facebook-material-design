@@ -681,7 +681,7 @@ so I made reactions that you see on Android and iOS applications.
 .fbPhotoCurationControlWrapper:hover,
 ._2eea:hover 
 {
-    transform: /*[[toggle-scale]]*/ !important;
+    transform: /*[[toggle-scale]]*/;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
