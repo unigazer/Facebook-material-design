@@ -1,11 +1,11 @@
 @-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/") 
 {
 /*Suggested Pages & Suggested Groups*/
-
 .ego_section,
 #GroupsRHCSuggestionSection,
 #AssistiveNubsPagelet,
 .fbNubButton,
+
 /* Ads. Well... at least some of them. */
 #u_jsonp_1_q,
 #u_jsonp_2_q,
@@ -33,19 +33,16 @@
 .home_right_column {
     display: /*[[toggle-display]]*/;
 }
-
 ._64b {
     padding: 0 !important;
 }
-  
 ._4-u2 ._5v6e .cardRightCol ._4-u8 {
-   height: inherit !important;
+    height: inherit !important;
 }
-
-.newsFeedComposer ._5v6e .home_right_column, ._268y {
+.newsFeedComposer ._5v6e .home_right_column,
+._268y {
     min-height: inherit !important;
 }
-
 ._583- {
     background: none !important;
     border-radius: 100px !important;
@@ -53,11 +50,10 @@
 ._583- img {
     border-radius: 100px !important;
 }
-
 ._53jh {
-    background-color:  #4a90e2 !important;
+    background-color: #4a90e2 !important;
     background-image: none !important;
-    border-bottom: 1px solid  #4a90e2 !important;
+    border-bottom: 1px solid #4a90e2 !important;
     box-shadow: 0 4px 4px -2px #4a90e2 !important;
 }
 ._6wl {
@@ -71,35 +67,38 @@
     border-bottom: 1px solid  /*[[header-color]]*/ !important;
     box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
 }
-/* Comments */
 
+/* Comments */
 .UFICommentContent {
     font-weight: 600 !important;
+}
+.fcg,
+a.uiLinkSubtle {
+    color: #000 !important;
 }
 ._5vsj.UFIContainer .UFIReplyList ._4oep._2o9m:after,
 ._5vsj.UFIContainer .UFIReplyList ._4oep._4204:after {
     border-left: 2px dashed #039BE5 !important;
 }
-
 ._5vsj.UFIContainer .UFIReplyList ._4oep {
     border-left: 2px dashed #039BE5 !important;
     margin-left: -2px !important;
     padding-left: 8px !important;
 }
-/* Messages */
 
+/* Messages */
 ._2w7 img {
     border-radius: 50px !important;
 }
 ._1ht1._1ht2 {
-    background-color: /*[[header-color]]*/!important;
+    background-color: /*[[header-color]]*/ !important;
 }
 ._1ht7,
 ._1htf span {
     color: #000000 !important;
 }
-/* Background color */
 
+/* Background color */
 ._5vb_,
 ._5vb_ #contentCol,
 .timelineLayout,
@@ -109,8 +108,8 @@
 ._5sic {
     background: linear-gradient(120deg, #fafafa, #fff) !important;
 }
-/* Profile */
 
+/* Profile */
 .profilePicThumb img,
 ._2yeu.img {
     border-radius: 100px !important;
@@ -176,7 +175,6 @@
 #fbTimelineHeadline .profilePicThumb {
     background: none !important;
 }
-
 ._5clo {
     border: none !important;
     background-color: transparent !important;
@@ -185,15 +183,15 @@
 ._5clp {
     outline: none !important;
 }
-/* Facebook header */
 
+/* Facebook header */
 ._2s1x ._2s1y,
 ._4ee_,
 ._zpj,
 ._1l-e,
 #booklet #pageheader {
-    background-color: /*[[header-color]]*/!important;
-    border-bottom: /*[[header-color]]*/!important;
+    background-color: /*[[header-color]]*/ !important;
+    border-bottom: /*[[header-color]]*/ !important;
     box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
 }
 ._4-u2 {
@@ -224,8 +222,7 @@ html ._5k35 ._5k3a,
 }
 .art_border:after,
 ._42xb,
-.music_artwork
- {
+.music_artwork {
     border: none !important;
     border-radius: 100px !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -233,7 +230,7 @@ html ._5k35 ._5k3a,
 ._5d3_::after,
 ._gx8::after,
 ._4cbv {
-    border: none !important; 
+    border: none !important;
 }
 ._14b9 ._r95,
 ._14b9 ._gx6,
@@ -248,21 +245,33 @@ html ._5k35 ._5k3a,
 ._35za {
     border: none !important;
 }
-/* Comments color */
 
+/* Comments color */
 ._5vsj .UFIRow {
     background-color: #F5F5F5 !important;
 }
 ._54ru {
     border-radius: 60px !important;
 }
-/* Shadows on boxes */
 
+/* Post box */
+.timestampContent,
+._ipn._ipn a,
+._3csb._3csb a,
+._1p1v,
+._ipn,
+._2ah8,
+._26z1 {
+    color: #000 !important;
+}
+
+/* Shadows on boxes */
 ._4-u8,
 ._h7n,
 ._5pcr,
 ._4-u2,
 ._3i9,
+
 /* Places to go */
 ._15nc,
 ._3z4s,
@@ -273,8 +282,7 @@ html ._5k35 ._5k3a,
 ._5yb1,
 ._3-g8 {
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
-      /* Animation */
-    
+    /* Animation */
     -webkit-animation-name: /*[[toggle-animation]]*/;
     -moz-animation-name: /*[[toggle-animation]]*/;
     animation-name: /*[[toggle-animation]]*/;
@@ -286,39 +294,35 @@ html ._5k35 ._5k3a,
     animation-fill-mode: both !important;
 }
 @-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-
 .fadeInUp {
-  -webkit-animation-name: /*[[toggle-animation]]*/;
-  animation-name: /*[[toggle-animation]]*/;
+     -webkit-animation-name: /*[[toggle-animation]]*/;
+     animation-name: /*[[toggle-animation]]*/;
 }
-/* Additional animation */
 
+/* Additional animation */
 .UFICommentBody span,
 .pam {
     -webkit-animation-name: fadeIn !important;
@@ -351,8 +355,8 @@ html ._5k35 ._5k3a,
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
-/* Chat effect */
 
+/* Chat effect */
 ._d97,
 ._d97 span {
     -webkit-animation-name: fadeIn !important;
@@ -385,8 +389,8 @@ html ._5k35 ._5k3a,
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
-/* End of the addition animation */
 
+/* End of the addition animation */
 html ._6-d .fbTimelineSection {
     border: none !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -397,8 +401,8 @@ html ._6-d .fbTimelineSection {
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
     border: none !important;
 }
-/* The "Post" button */
 
+/* The "Post" button */
 ._4jy1,
 ._1yw,
 ._42g-,
@@ -436,8 +440,8 @@ html ._6-d .fbTimelineSection {
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
     transition: all 300ms ease-in-out;
 }
-/* Pages */
 
+/* Pages */
 ._3f-h._3f-i,
 ._1i81 {
     border-color: #03a9f4 !important;
@@ -446,9 +450,10 @@ html ._6-d .fbTimelineSection {
 ._2-0o {
     border: none !important;
 }
-/* Gropus */
-/* Add members to the groups */
 
+/* Gropus */
+
+/* Add members to the groups */
 ._2-fx {
     border-radius: 100px;
     box-shadow: 0px 4px 4px -2px #bfbfbf;
@@ -458,18 +463,17 @@ div.uiTypeaheadView .selected {
     border-color: #0084ff !important;
     transition: all 300ms ease-in-out;
 }
-/* Seen */
 
+/* Seen */
 ._510g {
     color: #000000 !important;
     font-weight: bold;
 }
+
 /* Some adittional fixes */
-
 ._3qe1 li._3qe0 {
-  border-color: #4a90e2 !important;
+    border-color: #4a90e2 !important;
 }
-
 ._nft,
 ._3rt8,
 ._2hma,
@@ -491,7 +495,9 @@ div.uiTypeaheadView .selected {
 .menu_login_container .login_form_label_field a {
     color: #ffffff !important;
 }
-._517h:hover, ._59pe:focus, ._59pe:hover {
+._517h:hover,
+._59pe:focus,
+._59pe:hover {
     box-shadow: 0px 4px 4px -2px #bfbfbf;
 }
 ._4jd_ img,
@@ -502,14 +508,16 @@ div.uiTypeaheadView .selected {
     margin-left: 4%;
     margin-right: 4%;
 }
+
 /* Some adittional fixes - inbox profile pics on main page */
 ._1y2l ._4qeb {
     height: inherit !important;
     width: 100% !important;
 }
-._1y2l ._4qeb>div {
+._1y2l ._4qeb > div {
     margin: 0 !important;
 }
+
 /*==========================================================
 
 	     Facebook Animated Reactions
@@ -523,13 +531,14 @@ The author said that the code is free to modify and redistribute
 so I made reactions that you see on Android and iOS applications.
 
 ===========================================================*/
+
 /*create root class*/
 
 /*:root {
     --big-emoji: url('');
 } */
-/*Widen reactions popup*/
 
+/*Widen reactions popup*/
 ._iu- {
     width: 335px;
 }
@@ -539,46 +548,58 @@ so I made reactions that you see on Android and iOS applications.
 ._2jry {
     width: 56px !important;
 }
-/* BIG EMOJIS */
-/*Like*/
 
+/* BIG EMOJIS */
+
+/*Like*/
 ._2jry ._9-_._3j7l {
     background-image: /*[[enable-reactions]]*/;
     background-position: 1px -7px;
 }
-/*Love*/
 
+/*Love*/
 ._2jry ._9-_._3j7m {
     background-image: /*[[enable-reactions]]*/;
     background-position: -68px -6px;
 }
-/*Haha*/
 
+/*Haha*/
 ._2jry ._9-_._3j7o {
     background-image: /*[[enable-reactions]]*/;
     background-position: -130px -7px;
 }
-/*Wow*/
 
+/*Wow*/
 ._2jry ._9-_._3j7n {
     background-image: /*[[enable-reactions]]*/;
     background-position: -190px -7px;
 }
-/*Sad*/
 
+/*Sad*/
 ._2jry ._9-_._3j7r {
     background-image: /*[[enable-reactions]]*/;
     background-position: -250px -7px;
 }
-/*Angry*/
 
+/*Angry*/
 ._2jry ._9-_._3j7q {
     background-image: /*[[enable-reactions]]*/;
     background-position: -312px -7px;
 }
-/* Features Test */
-/* Chat */
 
+/* Features Test */
+
+/* Anchor tag #0084ff */
+.UFICommentActorName,
+._5f4c,
+._5v3q ._5pbw .fcg a {
+    color: #0074db !important;
+}
+
+/* Chat */
+._568- {
+    color: #000 !important;
+}
 ._2v5j {
     opacity: /*[[toggle-chat]]*/;
 }
@@ -586,19 +607,19 @@ so I made reactions that you see on Android and iOS applications.
     opacity: 1;
     font-weight: bold !important;
 }
-/* Notifications Avatars */
 
+/* Notifications Avatars */
 ._ors ._33h {
     border-radius: 50px !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
-/* Video player */
 
+/* Video player */
 ._gn4,
 ._i5q ._2-mn,
 ._i5q ._2-mp,
 ._gn0._gn1 ._gn5 {
-    background-color: /*[[header-color]]*/!important;
+    background-color: /*[[header-color]]*/ !important;
 }
 ._38a2 {
     transition: 300ms all ease-in-out !important;
@@ -611,8 +632,8 @@ so I made reactions that you see on Android and iOS applications.
 ._5g7d {
     box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
 }
-/* Pictures */
 
+/* Pictures */
 .fbPhotoSnowliftContainer .snowliftPayloadRoot .uiContextualLayerParent,
 ._n9,
 .uiScrollableAreaContent,
@@ -648,13 +669,13 @@ so I made reactions that you see on Android and iOS applications.
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
-/* Colors on borders */
 
+/* Colors on borders */
 ._4-u2 {
     border-top: 1px solid /*[[header-color]]*/ !important;
 }
-/* Glowing status indicator */
 
+/* Glowing status indicator */
 ._568z span {
     -webkit-box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
     -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
@@ -666,49 +687,46 @@ so I made reactions that you see on Android and iOS applications.
   from { box-shadow:0px 0px 5px 1px rgb(66, 183, 42); }
   to { box-shadow: 0px 0px 10px 1px rgb(66, 183, 42); }
 }*/
-/* Pictures scale */
 
+/* Pictures scale */
 #u_0_2k,
 ._53s,
 .fbPhotoCurationControlWrapper,
-._2eea
-{
+._2eea {
     transform: scale(1) !important;
     transition: 300ms all ease-in-out !important;
 }
 #u_0_2k:hover,
 ._53s:hover,
 .fbPhotoCurationControlWrapper:hover,
-._2eea:hover 
-{
-    transform: /*[[toggle-scale]]*/;
+._2eea:hover {
+    transform: /*[[toggle-scale]]*/ !important;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
 }
+
 /* Feeling/Activity, Check In */
 ._599m,
 ._5u91 {
     border: none !important;
     transition: all 300ms ease-in-out !important;
     background-color: inherit !important;
-    
 }
 ._599m:hover,
 ._599m:active,
-._5u91:hover, 
+._5u91:hover,
 ._5u91:active {
     background-color: #039BE5 !important;
     border: none !important;
     transition: all 300ms ease-in-out !important;
 }
-/* Page plugins (Embedded on other websites) */
 
+/* Page plugins (Embedded on other websites) */
 ._1drm._1ds3 ._1drn,
 ._54ru,
 ._5pat ._5sq7 {
     border-radius: 100px !important;
     box-shadow: 0px 4px 4px -2px #bfbfbf !important;
     outline: none !important;
-}
 }
