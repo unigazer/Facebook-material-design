@@ -526,8 +526,8 @@ so I made reactions that you see on Android and iOS applications.
 /*create root class*/
 
 /*:root {
-    --big-emojis: url('https://i.imgur.com/qy5Tcoa.gif');
-}*/
+    --big-emoji: url('');
+} */
 /*Widen reactions popup*/
 
 ._iu- {
@@ -656,9 +656,9 @@ so I made reactions that you see on Android and iOS applications.
 /* Glowing status indicator */
 
 ._568z span {
-    -webkit-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
+    -webkit-box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
     -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
-    box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
+    box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
     /*animation:pulse 2s infinite alternate;*/
 }
 
