@@ -261,7 +261,8 @@ html ._5k35 ._5k3a,
 ._1p1v,
 ._ipn,
 ._2ah8,
-._26z1 {
+._26z1,
+._2hm5 {
     color: #000 !important;
 }
 
@@ -508,7 +509,9 @@ div.uiTypeaheadView .selected {
     margin-left: 4%;
     margin-right: 4%;
 }
-
+._79m {
+    border-radius: 100px !important;
+}
 /* Some adittional fixes - inbox profile pics on main page */
 ._1y2l ._4qeb {
     height: inherit !important;
@@ -585,7 +588,7 @@ so I made reactions that you see on Android and iOS applications.
 
 /* Features Test */
 
-/* Anchor tag #0084ff #0074db */
+/* Anchor tag */
 .UFICommentActorName,
 ._5f4c,
 ._5v3q ._5pbw .fcg a,
@@ -596,8 +599,11 @@ a.profileLink,
 ._58cn ._58cl,
 ._58cm,
 div.mtm._4fzb a,
-div.mtm._5pcm a {
-    color: /*[[header-color]]*/ !important;
+div.mtm._5pcm a,
+div.plm._42ef a,
+div._5pbx.userContent a,
+div._2hm8 a {
+    color: #0084FF !important;
 }
 
 /* Chat */
