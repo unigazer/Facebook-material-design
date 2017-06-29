@@ -592,7 +592,15 @@ so I made reactions that you see on Android and iOS applications.
 /* Anchor tag #0084ff */
 .UFICommentActorName,
 ._5f4c,
-._5v3q ._5pbw .fcg a {
+._5v3q ._5pbw .fcg a,
+._y-c,
+._3075 a,
+._5qtp,
+a.profileLink,
+._58cn ._58cl,
+._58cm,
+div.mtm._4fzb a,
+div.mtm._5pcm a {
     color: #0074db !important;
 }
 
