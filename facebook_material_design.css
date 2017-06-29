@@ -519,17 +519,13 @@ div.uiTypeaheadView .selected {
 }
 
 /*==========================================================
-
 	     Facebook Animated Reactions
                    Version: 1.0
 	By WhyseMan , forked from BangDroid
-
 Based on 'Facebook - Pokémon Emojis by Scheliux' but
 modified; the big emojis are animated!!
-
 The author said that the code is free to modify and redistribute 
 so I made reactions that you see on Android and iOS applications.
-
 ===========================================================*/
 
 /*create root class*/
@@ -589,7 +585,7 @@ so I made reactions that you see on Android and iOS applications.
 
 /* Features Test */
 
-/* Anchor tag #0084ff */
+/* Anchor tag #0084ff #0074db */
 .UFICommentActorName,
 ._5f4c,
 ._5v3q ._5pbw .fcg a,
@@ -601,7 +597,7 @@ a.profileLink,
 ._58cm,
 div.mtm._4fzb a,
 div.mtm._5pcm a {
-    color: #0074db !important;
+    color: /*[[header-color]]*/ !important;
 }
 
 /* Chat */
@@ -708,7 +704,7 @@ div.mtm._5pcm a {
 ._53s:hover,
 .fbPhotoCurationControlWrapper:hover,
 ._2eea:hover {
-    transform: /*[[toggle-scale]]*/ !important;
+    transform: /*[[toggle-scale]]*/;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
