@@ -126,9 +126,6 @@
   ._5clp {
     outline: none !important;
   }
-  .ellipsis {
-    color: #fff !important;
-  }
   /* Facebook header */
   ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader {
     background-color: /*[[header-color]]*/ !important;
