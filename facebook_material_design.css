@@ -67,7 +67,7 @@
     background: linear-gradient(120deg, #fafafa, #fff) !important;
   }
   /* Profile */
-  .profilePicThumb img, ._2yeu.img {
+  .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj {
     border-radius: 100px !important;
     border: none !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -130,7 +130,7 @@
   ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader {
     background-color: /*[[header-color]]*/ !important;
     border-bottom: /*[[header-color]]*/ !important;
-    box-shadow: 0 4px 4px -2px/*[[header-color]]*/ !important;
+    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
   }
   ._4-u2 {
     border-radius: 0px !important;
@@ -364,6 +364,9 @@
   }
   ._79m {
     border-radius: 100px !important;
+  }
+  ._4lh ._2-d1 {
+    background: transparent !important;
   }
   /* Some adittional fixes - inbox profile pics on main page */
   ._1y2l ._4qeb {
