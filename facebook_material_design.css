@@ -299,13 +299,13 @@
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
     border: none !important;
   }
-  /* The "Post" button */
-  ._4jy1, ._1yw, ._42g-, ._38d2, ._5vwy ._13xf, ._xag, ._xah, .uiButtonConfirm, ._2v5c._4vb9, ._4vb9 ._xh9, .pop_content h2.dialog_title, ._206m .fbNubFlyoutTitlebar, ._146s ._5dwo, ._2qix, ._2jv-._4aq3 a, .uiMenuItem a:hover, ._xag ._558b:hover, ._54ne:hover, ._54nc:hover, ._alf:hover {
+ /* The "Post" button */
+  ._4jy1, ._1yw, ._42g-, ._38d2, ._5vwy ._13xf, ._xag, ._xah, .uiButtonConfirm, ._2v5c._4vb9, ._4vb9 ._xh9, .pop_content h2.dialog_title, ._206m .fbNubFlyoutTitlebar, ._146s ._5dwo, ._2qix, ._2jv-._4aq3 a, .uiMenuItem a:hover, ._xag ._558b:hover, ._54ne:hover, ._54nc:hover, ._alf:hover, ._4i3n ._291t._1kp2 {
     background-color: #0084ff !important;
     border-color: #0084ff !important;
     transition: all 300ms ease-in-out;
   }
-  ._4jy1:hover, ._xag:hover, ._xah:hover, .uiButtonConfirm:hover, ._42g-:hover, ._38d2:hover, ._146s ._5dwo:hover, ._2qix:hover {
+  ._4jy1:hover, ._xag:hover, ._xah:hover, .uiButtonConfirm:hover, ._42g-:hover, ._38d2:hover, ._146s ._5dwo:hover, ._2qix:hover, ._4i3n ._291t._1kp2:hover {
     background-color: #0074db !important;
     border-color: #0074db !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
