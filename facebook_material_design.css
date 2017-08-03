@@ -1,5 +1,4 @@
 @-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/") 
-@-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/") 
 {
   /*Suggested Pages & Suggested Groups*/
   .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column {
