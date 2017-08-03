@@ -1,4 +1,5 @@
 @-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/") 
+@-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/") 
 {
   /*Suggested Pages & Suggested Groups*/
   .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column {
@@ -34,8 +35,8 @@
   ._6wl:hover {
     background-color: /*[[header-color]]*/ !important;
     background-image: none !important;
-    border-bottom: 1px solid/*[[header-color]]*/ !important;
-    box-shadow: 0 4px 4px -2px/*[[header-color]]*/ !important;
+    border-bottom: 1px solid /*[[header-color]]*/ !important;
+    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
   }
   /* Comments */
   .UFICommentContent {
@@ -67,7 +68,7 @@
     background: linear-gradient(120deg, #fafafa, #fff) !important;
   }
   /* Profile */
-  .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj {
+  .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img {
     border-radius: 100px !important;
     border: none !important;
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -299,7 +300,7 @@
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
     border: none !important;
   }
- /* The "Post" button */
+  /* The "Post" button */
   ._4jy1, ._1yw, ._42g-, ._38d2, ._5vwy ._13xf, ._xag, ._xah, .uiButtonConfirm, ._2v5c._4vb9, ._4vb9 ._xh9, .pop_content h2.dialog_title, ._206m .fbNubFlyoutTitlebar, ._146s ._5dwo, ._2qix, ._2jv-._4aq3 a, .uiMenuItem a:hover, ._xag ._558b:hover, ._54ne:hover, ._54nc:hover, ._alf:hover, ._4i3n ._291t._1kp2 {
     background-color: #0084ff !important;
     border-color: #0084ff !important;
@@ -428,10 +429,10 @@ so I made reactions that you see on Android and iOS applications.
     background-position: -312px -7px;
   }
   /* Features Test */
-  /* Anchor tag */
+  /* Anchor tag 
   .UFICommentActorName, ._5f4c, ._5v3q ._5pbw .fcg a, ._y-c, ._3075 a, ._5qtp, a.profileLink, ._58cn ._58cl, ._58cm, div.mtm._4fzb a, div.mtm._5pcm a, div.plm._42ef a, div._5pbx.userContent a, div._2hm8 a, ._5vb_ ._c51 a, .UFIReplyLink, ._1fsj, ._2-fy, ._6-6, a._p, div._4bl9._2pis._2dbl > span._c24._50f3 > div > span > a, div._4bl9._2pis._2dbl > span._c24._50f3 > div > a, div._2lzr._50f5._50f7 > a, span._50f5._50f7 > a, ul.uiList._4kg._6-h._704._6-i > li > a, ._3sz, div.fsl.fwb.fcb > a, span._3t5.fwb, ._3s19, ._gx7, ._4cbt, span.fwb > a, div.mbs.fwb > a, .UFIPagerLink, .UFICommentBody > a, .UFIReplySocialSentenceLinkText, ._47z9, ._4129 a, .fbEventClassicButton, ._4b4x, ._5z7c a, ._b9- > div > a, ._6a ._6b a, ._5dw8 a {
-    color: /*[[toggle-anchor]]*/ !important;
-  }
+    color: /*[[toggle-anchor]] !important;
+  }*/
   /* Chat */
   ._568- {
     color: #000 !important;
@@ -511,11 +512,11 @@ so I made reactions that you see on Android and iOS applications.
   to { box-shadow: 0px 0px 10px 1px rgb(66, 183, 42); }
 }*/
   /* Pictures scale */
-  #u_0_2k, ._53s, .fbPhotoCurationControlWrapper, ._2eea {
+  ._53s, .fbPhotoCurationControlWrapper, ._2eea {
     transform: scale(1) !important;
     transition: 300ms all ease-in-out !important;
   }
-  #u_0_2k:hover, ._53s:hover, .fbPhotoCurationControlWrapper:hover, ._2eea:hover {
+  ._53s:hover, .fbPhotoCurationControlWrapper:hover, ._2eea:hover {
     transform: /*[[toggle-scale]]*/;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
