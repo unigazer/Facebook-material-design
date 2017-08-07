@@ -185,7 +185,7 @@
   /* Shadows on boxes */
   ._4-u8, ._h7n, ._5pcr, ._4-u2, ._3i9,
   /* Places to go */
-  ._15nc, ._3z4s, ._4psx, ._2h00, ._1b6y, ._wza, ._5yb1, ._3-g8 {
+  ._15nc, ._3z4s, ._4psx, ._2h00, ._1b6y, ._wza, ._5yb1, ._3-g8, ._4__g.escapeHatchMinimal {
     box-shadow: 0 4px 4px -2px #bfbfbf !important;
     /* Animation */
     -webkit-animation-name: /*[[toggle-animation]]*/;
@@ -496,8 +496,8 @@ so I made reactions that you see on Android and iOS applications.
     animation-name: fadeIn;
   }
   /* Colors on borders */
-  ._4-u2 {
-    border-top: 1px solid/*[[header-color]]*/ !important;
+  ._4-u2, ._4__g.escapeHatchMinimal {
+    border-top: 1px solid /*[[header-color]]*/ !important;
   }
   /* Glowing status indicator */
   ._568z span {
