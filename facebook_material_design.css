@@ -496,8 +496,12 @@ so I made reactions that you see on Android and iOS applications.
     animation-name: fadeIn;
   }
   /* Colors on borders */
-  ._4-u2, ._4__g.escapeHatchMinimal {
-    border-top: 1px solid /*[[header-color]]*/ !important;
+  ._4-u2, ._4__g.escapeHatchMinimal, ._2w3 > ._30f {
+    border-top: 1px solid #0084FF !important;
+    border-radius: 0px !important;
+  }
+  ._3cz {
+    background: #fafafa !important;
   }
   /* Glowing status indicator */
   ._568z span {
