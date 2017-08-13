@@ -7,7 +7,7 @@ Firefox - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/?src=s
 
 I personaly recommend **Stylus** as it is more stable and has more modification options, while **Stylish** is currently broken.
 
-![Preview of the stylesheet](https://userstyles.org/style_screenshots/135965_additional_27003.jpeg)
+![Preview of the stylesheet](https://userstyles.org/style_screenshots/135965_after.jpeg)
 
 # Link to the stylesheet
 
