@@ -1,552 +1,541 @@
-@-moz-document regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"), url-prefix(https://www.facebookcorewwwi.onion/), url-prefix(https://connect.facebook.net/), url-prefix("https://www.facebook.com/") 
+@-moz-document url-prefix("https://www.facebookcorewwwi.onion/"), url-prefix("https://connect.facebook.net/"), url-prefix("https://www.facebook.com/"), regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*") 
 {
-  /*Suggested Pages & Suggested Groups*/
-  .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column {
-    display: /*[[toggle-display]]*/;
-  }
-  ._64b {
-    padding: 0 !important;
-  }
-  ._4-u2 ._5v6e .cardRightCol ._4-u8 {
-    height: inherit !important;
-  }
-  .newsFeedComposer ._5v6e .home_right_column, ._268y {
-    min-height: inherit !important;
-  }
-  ._583- {
-    background: none !important;
-    border-radius: 100px !important;
-  }
-  ._583- img {
-    border-radius: 100px !important;
-  }
-  ._53jh {
-    background-color: #4a90e2 !important;
-    background-image: none !important;
-    border-bottom: 1px solid #4a90e2 !important;
-    box-shadow: 0 4px 4px -2px #4a90e2 !important;
-  }
-  ._6wl {
-    background: #64DD17 !important;
-    background-color: #64DD17 !important;
-    border-color: #64DD17 !important;
-  }
-  ._6wl:hover {
-    background-color: /*[[header-color]]*/ !important;
-    background-image: none !important;
-    border-bottom: 1px solid /*[[header-color]]*/ !important;
-    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
-  }
-  /* Comments */
-  .UFICommentContent {
-    font-weight: 600 !important;
-  }
-  .fcg, a.uiLinkSubtle, ._538r {
-    color: #000 !important;
-  }
-  ._5vsj.UFIContainer .UFIReplyList ._4oep._2o9m:after, ._5vsj.UFIContainer .UFIReplyList ._4oep._4204:after {
-    border-left: 2px dashed #039BE5 !important;
-  }
-  ._5vsj.UFIContainer .UFIReplyList ._4oep {
-    border-left: 2px dashed #039BE5 !important;
-    margin-left: -2px !important;
-    padding-left: 8px !important;
-  }
-  /* Messages */
-  ._2w7 img {
-    border-radius: 50px !important;
-  }
-  ._1ht1._1ht2 {
-    background-color: /*[[header-color]]*/ !important;
-  }
-  ._1ht7, ._1htf span {
-    color: #000000 !important;
-  }
-  /* Background color */
-  ._5vb_, ._5vb_ #contentCol, .timelineLayout, .fbTimelineSection, ._4-u5, ._2h4b, ._5sic, ._50dz > div {
-    background: linear-gradient(120deg, #fafafa, #fff) !important;
-  }
-  /* Profile */
-  .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc {
-    border-radius: 100px !important;
-    border: none !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  }
-  ._3hv, ._bth {
-    border-radius: 60px !important;
-    border: none !important;
-  }
-  ._3hvt:after, ._38vo:after, ._5z79::before {
-    border: none !important;
-  }
-  ._31o4 {
-    border-radius: 60px !important;
-    border: none !important;
-  }
-  ._4ld-, ._33h._33h, ._54ru, ._55lt img, ._2akn img, ._4v9u img, ._4tdw img {
-    border-radius: 60px !important;
-    border: none !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  }
-  .fbChatTypeahead ._4p-s {
-    background-color: #FFF !important;
-  }
-  ._3s6x {
-    background: none !important;
-    color: #F5F5F5 !important;
-    text-shadow: 0px 0px 7px #000000 !important;
-  }
-  ._34mw, ._3s6x div {
-    font-weight: bolder !important;
-    text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-    text-align: center !important;
-  }
-  ._7ls, ._s0, ._7l2, ._rw img {
-    border-radius: 100px !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-    border: none !important;
-  }
-  .img .UFIActorImage ._54ru img {
-    border-radius: 60px !important;
-  }
-  ._55lq:after {
-    border: none !important;
-  }
-  .fbChatSidebar {
-    background-color: #FFFFFF !important;
-  }
-  #fbTimelineHeadline .profilePicThumb {
-    background: none !important;
-  }
-  ._5clo {
-    border: none !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-  ._5clp {
-    outline: none !important;
-  }
-  /* Facebook header */
-  ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader {
-    background-color: /*[[header-color]]*/ !important;
-    border-bottom: /*[[header-color]]*/ !important;
-    box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
-  }
-  ._4-u2 {
-    border-radius: 0px !important;
-  }
-  ._1k67 ._2s25:after {
-    border: none !important;
-  }
-  ._5v9k .UFIAddComment .UFIImageBlockImage:after, ._5v9k .UFIComment .UFIImageBlockImage:after {
-    border: none !important;
-    border-radius: 60px !important;
-  }
-  ._698 ._5q6s::after {
-    border: none !important;
-  }
-  ._1qp6 .fbProfileBrowserListContainer .fbProfileBrowserListItem, html ._262m ._698 {
-    border: none !important;
-  }
-  html ._5k35 ._5k3a, ._5mub, ._5mtz {
-    border: none !important;
-  }
-  ._5mt- {
-    outline: none !important;
-  }
-  .art_border:after, ._42xb, .music_artwork {
-    border: none !important;
-    border-radius: 100px !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  }
-  ._5d3_::after, ._gx8::after, ._4cbv {
-    border: none !important;
-  }
-  ._14b9 ._r95, ._14b9 ._gx6, ._14b9 ._r95, ._6l-:after {
-    border: none !important;
-  }
-  ._5frj::after {
-    border: none !important;
-  }
-  ._2cpc::after, ._35za {
-    border: none !important;
-  }
-  /* Comments color */
-  ._5vsj .UFIRow {
-    background-color: #F5F5F5 !important;
-  }
-  ._54ru {
-    border-radius: 60px !important;
-  }
-  /* Post box */
-  .timestampContent, ._ipn._ipn a, ._3csb._3csb a, ._1p1v, ._ipn, ._2ah8, ._26z1, ._2hm5 {
-    color: #000 !important;
-  }
-  /* Shadows on boxes */
-  ._4-u8, ._h7n, ._5pcr, ._4-u2, ._3i9,
-  /* Places to go */
-  ._15nc, ._3z4s, ._4psx, ._2h00, ._1b6y, ._wza, ._5yb1, ._3-g8, ._4__g.escapeHatchMinimal {
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-    /* Animation */
-    -webkit-animation-name: /*[[toggle-animation]]*/;
-    -moz-animation-name: /*[[toggle-animation]]*/;
-    animation-name: /*[[toggle-animation]]*/;
-    -webkit-animation-duration: 600ms !important;
-    -moz-animation-duration: 600ms !important;
-    animation-duration: 600ms !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
-    animation-fill-mode: both !important;
-  }
-  @-webkit-keyframes fadeInUp {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
+     /* Background color */
+     ._5vb_, ._5vb_ #contentCol, .timelineLayout, .fbTimelineSection, ._4-u5, ._2h4b, ._5sic, ._50dz > div, ._2d14, html ._4lh, ._4gd5 {
+        background: linear-gradient(120deg, #fafafa, #fff) !important;
     }
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+    /* Facebook header */
+    ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader {
+        background-color: /*[[header-color]]*/ !important;
+        border-bottom: /*[[header-color]]*/ !important;
+        box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
     }
-  }
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
+    ._4-u2 {
+        border-radius: 0px !important;
     }
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+    ._1k67 ._2s25:after {
+        border: none !important;
     }
-  }
-  .fadeInUp {
-    -webkit-animation-name: /*[[toggle-animation]]*/;
-    animation-name: /*[[toggle-animation]]*/;
-  }
-  /* Additional animation */
-  .UFICommentBody span, .pam {
-    -webkit-animation-name: fadeIn !important;
-    -moz-animation-name: fadeIn !important;
-    animation-name: fadeIn !important;
-    -webkit-animation-duration: 1s !important;
-    -moz-animation-duration: 1s !important;
-    animation-duration: 1s !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
-    animation-fill-mode: both !important;
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
+    ._5v9k .UFIAddComment .UFIImageBlockImage:after, ._5v9k .UFIComment .UFIImageBlockImage:after {
+        border: none !important;
+        border-radius: 60px !important;
     }
-    to {
-      opacity: 1;
+    ._698 ._5q6s::after {
+        border: none !important;
     }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    ._1qp6 .fbProfileBrowserListContainer .fbProfileBrowserListItem, html ._262m ._698 {
+        border: none !important;
     }
-    to {
-      opacity: 1;
+    html ._5k35 ._5k3a, ._5mub, ._5mtz {
+        border: none !important;
     }
-  }
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
-  /* Chat effect */
-  ._d97, ._d97 span {
-    -webkit-animation-name: fadeIn !important;
-    -moz-animation-name: fadeIn !important;
-    animation-name: fadeIn !important;
-    -webkit-animation-duration: 300ms !important;
-    -moz-animation-duration: 300ms !important;
-    animation-duration: 300ms !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
-    animation-fill-mode: both !important;
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
+    ._5mt- {
+        outline: none !important;
     }
-    to {
-      opacity: 1;
+    .art_border:after, ._42xb, .music_artwork {
+        border: none !important;
+        border-radius: 100px !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
     }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    ._5d3_::after, ._gx8::after, ._4cbv {
+        border: none !important;
     }
-    to {
-      opacity: 1;
+    ._14b9 ._r95, ._14b9 ._gx6, ._14b9 ._r95, ._6l-:after {
+        border: none !important;
     }
-  }
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
-  /* End of the addition animation */
-  html ._6-d .fbTimelineSection {
-    border: none !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  }
-  ._tun, ._kj3, ._z6j {
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-    border: none !important;
-  }
-  /* The "Post" button */
-  ._4jy1, ._1yw, ._42g-, ._38d2, ._5vwy ._13xf, ._xag, ._xah, .uiButtonConfirm, ._2v5c._4vb9, ._4vb9 ._xh9, .pop_content h2.dialog_title, ._206m .fbNubFlyoutTitlebar, ._146s ._5dwo, ._2qix, ._2jv-._4aq3 a, .uiMenuItem a:hover, ._xag ._558b:hover, ._54ne:hover, ._54nc:hover, ._alf:hover, ._4i3n ._291t._1kp2, .openToggler>._5vto._5vto {
-    background-color: #0084ff !important;
-    border-color: #0084ff !important;
-    transition: all 300ms ease-in-out;
-  }
-  ._4jy1:hover, ._xag:hover, ._xah:hover, .uiButtonConfirm:hover, ._42g-:hover, ._38d2:hover, ._146s ._5dwo:hover, ._2qix:hover, ._4i3n ._291t._1kp2:hover {
-    background-color: #0074db !important;
-    border-color: #0074db !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-    transition: all 300ms ease-in-out;
-  }
-  /* Pages */
-  ._3f-h._3f-i, ._1i81 {
-    border-color: #03a9f4 !important;
-  }
-  ._qa1, ._2-0o {
-    border: none !important;
-  }
-  /* Gropus */
-  /* Add members to the groups */
-  ._2-fx {
-    border-radius: 100px;
-    box-shadow: 0px 4px 4px -2px #bfbfbf;
-  }
-  div.uiTypeaheadView .selected {
-    background-color: #0084ff !important;
-    border-color: #0084ff !important;
-    transition: all 300ms ease-in-out;
-  }
-  /* Seen */
-  ._510g {
-    color: #000000 !important;
-    font-weight: bold;
-  }
-  /* Some adittional fixes */
-  ._3qe1 li._3qe0 {
-    border-color: #4a90e2 !important;
-  }
-  ._nft, ._3rt8, ._2hma, ._412e:after, .fbxWelcomeBoxBlock:after, ._2yq ._4-u2::before {
-    border: none !important;
-    box-shadow: none !important;
-  }
-  ._3yq- {
-    padding: 0 !important;
-  }
-  ._3_gi .uiSearchInput::after, ._3_gi .uiTypeahead::after, ._3_gi ._58ak::after {
-    background: #FFFFFF !important;
-    border: 1px solid rgba(0, 0, 0, .30) !important;
-  }
-  .menu_login_container .login_form_label_field a {
-    color: #ffffff !important;
-  }
-  ._517h:hover, ._59pe:focus, ._59pe:hover {
-    box-shadow: 0px 4px 4px -2px #bfbfbf;
-  }
-  ._4jd_ img, ._4je2 {
-    border-radius: 100px !important;
-    box-shadow: 0px 4px 4px -2px #bfbfbf;
-    padding: 0 !important;
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-  ._79m {
-    border-radius: 100px !important;
-  }
-  ._4lh ._2-d1 {
-    background: transparent !important;
-  }
-  /* Some adittional fixes - inbox profile pics on main page */
-  ._1y2l ._4qeb {
-    height: inherit !important;
-    width: 100% !important;
-  }
-  ._1y2l ._4qeb > div {
-    margin: 0 !important;
-  }
-  /*==========================================================
+    ._5frj::after {
+        border: none !important;
+    }
+    ._2cpc::after, ._35za {
+        border: none !important;
+    }
+    /* Post box */
+    .timestampContent, ._ipn._ipn a, ._3csb._3csb a, ._1p1v, ._ipn, ._2ah8, ._26z1, ._2hm5 {
+        color: #000 !important;
+    }
+    /* The "Post" button */
+    ._4jy1, ._1yw, ._42g-, ._38d2, ._5vwy ._13xf, ._xag, ._xah, .uiButtonConfirm, ._2v5c._4vb9, ._4vb9 ._xh9, .pop_content h2.dialog_title, ._206m .fbNubFlyoutTitlebar, ._146s ._5dwo, ._2qix, ._2jv-._4aq3 a, .uiMenuItem a:hover, ._xag ._558b:hover, ._54ne:hover, ._54nc:hover, ._alf:hover, ._4i3n ._291t._1kp2, .openToggler>._5vto._5vto, ._3oyq:hover, ._zxd:hover {
+        background-color: #4080FF !important;
+        border-color: #4080FF !important;
+        transition: all 300ms ease-in-out;
+    }
+    ._4jy1:hover, ._xag:hover, ._xah:hover, .uiButtonConfirm:hover, ._42g-:hover, ._38d2:hover, ._146s ._5dwo:hover, ._2qix:hover, ._4i3n ._291t._1kp2:hover {
+        background-color: #0074db !important;
+        border-color: #0074db !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+        transition: all 300ms ease-in-out;
+    }
+    /* Shadows on boxes */
+    ._4-u8, ._h7n, ._5pcr, ._4-u2, ._3i9, /* Places to go */
+    ._15nc, ._3z4s, ._4psx, ._2h00, ._1b6y, ._wza, ._5yb1, ._3-g8, ._4__g.escapeHatchMinimal {
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+        /* Animation */
+        -webkit-animation-name: /*[[toggle-animation]]*/;
+        -moz-animation-name: /*[[toggle-animation]]*/;
+        animation-name: /*[[toggle-animation]]*/;
+        -webkit-animation-duration: 600ms !important;
+        -moz-animation-duration: 600ms !important;
+        animation-duration: 600ms !important;
+        -webkit-animation-fill-mode: both !important;
+        -moz-animation-fill-mode: both !important;
+        animation-fill-mode: both !important;
+    }
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    .fadeInUp {
+        -webkit-animation-name: /*[[toggle-animation]]*/;
+        animation-name: /*[[toggle-animation]]*/;
+    }
+    /* Additional animation */
+    .UFICommentBody span, .pam {
+        -webkit-animation-name: fadeIn !important;
+        -moz-animation-name: fadeIn !important;
+        animation-name: fadeIn !important;
+        -webkit-animation-duration: 1s !important;
+        -moz-animation-duration: 1s !important;
+        animation-duration: 1s !important;
+        -webkit-animation-fill-mode: both !important;
+        -moz-animation-fill-mode: both !important;
+        animation-fill-mode: both !important;
+    }
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    /* Comments */
+    .UFICommentContent {
+        font-weight: 600 !important;
+    }
+    .fcg, a.uiLinkSubtle, ._538r {
+        color: #000 !important;
+    }
+    ._5vsj.UFIContainer .UFIReplyList ._4oep._2o9m:after, ._5vsj.UFIContainer .UFIReplyList ._4oep._4204:after {
+        border-left: 2px dashed #039BE5 !important;
+    }
+    ._5vsj.UFIContainer .UFIReplyList ._4oep {
+        border-left: 2px dashed #039BE5 !important;
+        margin-left: -2px !important;
+        padding-left: 8px !important;
+    }
+    /* Comments color */
+    ._5vsj .UFIRow, ._5vsj._5vsj._5vsj, ._57d8, ._3ubp {
+        background-color: #fafafa !important;
+    }
+    /*Suggested Pages & Suggested Groups*/
+    .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column {
+        display: /*[[toggle-display]]*/;
+    }
+    ._64b {
+        padding: 0 !important;
+    }
+    ._4-u2 ._5v6e .cardRightCol ._4-u8 {
+        height: inherit !important;
+    }
+    .newsFeedComposer ._5v6e .home_right_column, ._268y {
+        min-height: inherit !important;
+    }
+    ._583- {
+        background: none !important;
+        border-radius: 100px !important;
+    }
+    ._583- img {
+        border-radius: 100px !important;
+    }
+    ._53jh {
+        background-color: #4a90e2 !important;
+        background-image: none !important;
+        border-bottom: 1px solid #4a90e2 !important;
+        box-shadow: 0 4px 4px -2px #4a90e2 !important;
+    }
+    ._6wl {
+        background: #64DD17 !important;
+        background-color: #64DD17 !important;
+        border-color: #64DD17 !important;
+    }
+    ._6wl:hover {
+        background-color: /*[[header-color]]*/ !important;
+        background-image: none !important;
+        border-bottom: 1px solid/*[[header-color]]*/ !important;
+        box-shadow: 0 4px 4px -2px/*[[header-color]]*/ !important;
+    }
+    /* Chat effect */
+    ._d97, ._d97 span, ._o46._3i_m ._3058 {
+        -webkit-animation-name: slideInUp !important;
+        -moz-animation-name: slideInUp !important;
+        animation-name: slideInUp !important;
+        -webkit-animation-duration: 300ms !important;
+        -moz-animation-duration: 300ms !important;
+        animation-duration: 300ms !important;
+        -webkit-animation-fill-mode: both !important;
+        -moz-animation-fill-mode: both !important;
+        animation-fill-mode: both !important;
+    }
+    @keyframes slideInUp {
+        from {
+            transform: translate3d(0, 100%, 0);
+            visibility: visible;
+        }
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .slideInUp {
+        animation-name: slideInUp;
+    }
+    /* End of the addition animation */
+    html ._6-d .fbTimelineSection {
+        border: none !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    }
+    ._tun, ._kj3, ._z6j {
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+        border: none !important;
+    }
+    /* Messages */
+    ._2w7 img {
+        border-radius: 50px !important;
+    }
+    ._1ht1._1ht2 {
+        background-color: /*[[header-color]]*/ !important;
+    }
+    ._1ht7, ._1htf span {
+        color: #000000 !important;
+    }
+    /* Seen */
+    ._510g {
+        color: #000000 !important;
+        font-weight: bold;
+    }
+    /* Profile */
+    .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc, ._487j > img {
+        border-radius: 100px !important;
+        border: none !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    }
+    ._3hv, ._bth {
+        border-radius: 60px !important;
+        border: none !important;
+    }
+    ._3hvt:after, ._38vo:after, ._5z79::before {
+        border: none !important;
+    }
+    ._31o4 {
+        border-radius: 60px !important;
+        border: none !important;
+    }
+    ._4ld-, ._33h._33h, ._54ru, ._55lt img, ._2akn img, ._4v9u img, ._4tdw img {
+        border-radius: 60px !important;
+        border: none !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    }
+    .fbChatTypeahead ._4p-s {
+        background-color: #FFF !important;
+    }
+    ._3s6x {
+        background: none !important;
+        color: #F5F5F5 !important;
+        text-shadow: 0px 0px 7px #000000 !important;
+    }
+    ._34mw, ._3s6x div {
+        font-weight: bolder !important;
+        text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+        text-align: center !important;
+    }
+    ._7ls, ._s0, ._7l2, ._rw img {
+        border-radius: 100px !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+        border: none !important;
+    }
+    .img .UFIActorImage ._54ru img {
+        border-radius: 60px !important;
+    }
+    ._55lq:after {
+        border: none !important;
+    }
+    .fbChatSidebar {
+        background-color: #FFFFFF !important;
+    }
+    #fbTimelineHeadline .profilePicThumb {
+        background: none !important;
+    }
+    ._5clo {
+        border: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    ._5clp {
+        outline: none !important;
+    }
+    ._54ru {
+        border-radius: 60px !important;
+    }
+    /* Pages */
+    ._3f-h._3f-i, ._1i81 {
+        border-color: #03a9f4 !important;
+    }
+    ._qa1, ._2-0o {
+        border: none !important;
+    }
+    /* Gropus */
+    /* Add members to the groups */
+    ._2-fx {
+        border-radius: 100px;
+        box-shadow: 0px 4px 4px -2px #bfbfbf;
+    }
+    div.uiTypeaheadView .selected {
+        background-color: #0084ff !important;
+        border-color: #0084ff !important;
+        transition: all 300ms ease-in-out;
+    }
+    /* Some adittional fixes */
+    ._3qe1 li._3qe0 {
+        border-color: #4a90e2 !important;
+    }
+    ._nft, ._3rt8, ._2hma, ._412e:after, .fbxWelcomeBoxBlock:after, ._2yq ._4-u2::before {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    ._3yq- {
+        padding: 0 !important;
+    }
+    ._3_gi .uiSearchInput::after, ._3_gi .uiTypeahead::after, ._3_gi ._58ak::after {
+        background: #FFFFFF !important;
+        border: 1px solid rgba(0, 0, 0, .30) !important;
+    }
+    .menu_login_container .login_form_label_field a {
+        color: #ffffff !important;
+    }
+    ._517h:hover, ._59pe:focus, ._59pe:hover {
+        box-shadow: 0px 4px 4px -2px #bfbfbf;
+    }
+    ._4jd_ img, ._4je2 {
+        border-radius: 100px !important;
+        box-shadow: 0px 4px 4px -2px #bfbfbf;
+        padding: 0 !important;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    ._79m {
+        border-radius: 100px !important;
+    }
+    ._4lh ._2-d1 {
+        background: transparent !important;
+    }
+    /* Some adittional fixes - inbox profile pics on main page */
+    ._1y2l ._4qeb {
+        height: inherit !important;
+        width: 100% !important;
+    }
+    ._1y2l ._4qeb > div {
+        margin: 0 !important;
+    }
+    /*==========================================================
 	     Facebook Animated Reactions
                    Version: 1.0
 	By WhyseMan , forked from BangDroid
-Based on 'Facebook - Pokémon Emojis by Scheliux' but
-modified; the big emojis are animated!!
-The author said that the code is free to modify and redistribute 
-so I made reactions that you see on Android and iOS applications.
-===========================================================*/
-  /*create root class*/
-  /*:root {
+    Based on 'Facebook - Pokémon Emojis by Scheliux' but
+    modified; the big emojis are animated!!
+    The author said that the code is free to modify and redistribute 
+    so I made reactions that you see on Android and iOS applications.
+    ===========================================================*/
+    /*create root class*/
+    /*:root {
     --big-emoji: url('');
-} */
-  /*Widen reactions popup*/
-  ._iu- {
-    width: 335px;
-  }
-  ._iuw, ._9-_, ._93m, ._2jry {
-    width: 56px !important;
-  }
-  /* BIG EMOJIS */
-  /*Like*/
-  ._2jry ._9-_._3j7l {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: 1px -7px;
-  }
-  /*Love*/
-  ._2jry ._9-_._3j7m {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -68px -6px;
-  }
-  /*Haha*/
-  ._2jry ._9-_._3j7o {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -130px -7px;
-  }
-  /*Wow*/
-  ._2jry ._9-_._3j7n {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -190px -7px;
-  }
-  /*Sad*/
-  ._2jry ._9-_._3j7r {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -250px -7px;
-  }
-  /*Angry*/
-  ._2jry ._9-_._3j7q {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -312px -7px;
-  }
-  /* Features Test */
-  /* Anchor tag 
-  .UFICommentActorName, ._5f4c, ._5v3q ._5pbw .fcg a, ._y-c, ._3075 a, ._5qtp, a.profileLink, ._58cn ._58cl, ._58cm, div.mtm._4fzb a, div.mtm._5pcm a, div.plm._42ef a, div._5pbx.userContent a, div._2hm8 a, ._5vb_ ._c51 a, .UFIReplyLink, ._1fsj, ._2-fy, ._6-6, a._p, div._4bl9._2pis._2dbl > span._c24._50f3 > div > span > a, div._4bl9._2pis._2dbl > span._c24._50f3 > div > a, div._2lzr._50f5._50f7 > a, span._50f5._50f7 > a, ul.uiList._4kg._6-h._704._6-i > li > a, ._3sz, div.fsl.fwb.fcb > a, span._3t5.fwb, ._3s19, ._gx7, ._4cbt, span.fwb > a, div.mbs.fwb > a, .UFIPagerLink, .UFICommentBody > a, .UFIReplySocialSentenceLinkText, ._47z9, ._4129 a, .fbEventClassicButton, ._4b4x, ._5z7c a, ._b9- > div > a, ._6a ._6b a, ._5dw8 a {
-    color: /*[[toggle-anchor]] !important;
-  }*/
-  /* Chat */
-  ._568- {
-    color: #000 !important;
-  }
-  ._2v5j {
-    opacity: /*[[toggle-chat]]*/;
-  }
-  ._5w1r span {
-    opacity: 1;
-    font-weight: bold !important;
-  }
-  /* Notifications Avatars */
-  ._ors ._33h {
-    border-radius: 50px !important;
-    box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  }
-  /* Video player */
-  ._gn4, ._i5q ._2-mn, ._i5q ._2-mp, ._gn0._gn1 ._gn5 {
-    background-color: /*[[header-color]]*/ !important;
-  }
-  ._38a2 {
-    transition: 300ms all ease-in-out !important;
-  }
-  ._38a2:hover {
-    transition: 300ms all ease-in-out !important;
-    box-shadow: 0 0px 10px 5px/*[[header-color]]*/ !important;
-    z-index: 1000 !important;
-  }
-  ._5g7d {
-    box-shadow: 0px 4px 4px -1px/*[[header-color]]*/ !important;
-  }
-  /* Pictures */
-  .fbPhotoSnowliftContainer .snowliftPayloadRoot .uiContextualLayerParent, ._n9, .uiScrollableAreaContent, .fbPhotosSnowliftFeedback, ._2-sx img {
-    -webkit-animation-name: fadeIn !important;
-    -moz-animation-name: fadeIn !important;
-    animation-name: fadeIn !important;
-    -webkit-animation-duration: 500ms !important;
-    -moz-animation-duration: 500ms !important;
-    animation-duration: 500ms !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
-    animation-fill-mode: both !important;
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
+    } */
+    /*Widen reactions popup*/
+    ._iu- {
+        width: 335px;
     }
-    to {
-      opacity: 1;
+    ._iuw, ._9-_, ._93m, ._2jry {
+        width: 56px !important;
     }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    /* BIG EMOJIS */
+    /*Like*/
+    ._2jry ._9-_._3j7l {
+        background-image: /*[[enable-reactions]]*/;
+        background-position: 1px -7px;
     }
-    to {
-      opacity: 1;
+    /*Love*/
+    ._2jry ._9-_._3j7m {
+        background-image: /*[[enable-reactions]]*/;
+        background-position: -68px -6px;
     }
-  }
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
-  /* Colors on borders */
-  ._4-u2, ._4__g.escapeHatchMinimal, ._2w3 > ._30f {
-    border-top: 1px solid #0084FF !important;
-    border-radius: 0px !important;
-  }
-  ._3cz {
-    background: #fafafa !important;
-  }
-  /* Glowing status indicator */
-  ._568z span {
-    -webkit-box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
-    -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
-    box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
-    /*animation:pulse 2s infinite alternate;*/
-  }
-  /*@keyframes pulse {
-  from { box-shadow:0px 0px 5px 1px rgb(66, 183, 42); }
-  to { box-shadow: 0px 0px 10px 1px rgb(66, 183, 42); }
-}*/
-  /* Pictures scale */
-  ._53s, .fbPhotoCurationControlWrapper, ._2eea {
-    transform: scale(1) !important;
-    transition: 300ms all ease-in-out !important;
-  }
-  ._53s:hover, .fbPhotoCurationControlWrapper:hover, ._2eea:hover {
-    transform: /*[[toggle-scale]]*/;
-    transition: 300ms all ease-in-out !important;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
-    z-index: 1 !important;
-  }
-  /* Feeling/Activity, Check In */
-  ._599m, ._5u91 {
-    border: none !important;
-    transition: all 300ms ease-in-out !important;
-    background-color: inherit !important;
-  }
-  ._599m:hover, ._599m:active, ._5u91:hover, ._5u91:active {
-    background-color: #039BE5 !important;
-    border: none !important;
-    transition: all 300ms ease-in-out !important;
-  }
-  /* Page plugins (Embedded on other websites) */
-  ._1drm._1ds3 ._1drn, ._54ru, ._5pat ._5sq7 {
-    border-radius: 100px !important;
-    box-shadow: 0px 4px 4px -2px #bfbfbf !important;
-    outline: none !important;
-  }
-  /* Scrollbar */
-  *::-webkit-scrollbar {
-    background: /*[[header-color]]*/ !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #fafafa !important;
-  }
+    /*Haha*/
+    ._2jry ._9-_._3j7o {
+        background-image: /*[[enable-reactions]]*/;
+        background-position: -130px -7px;
+    }
+    /*Wow*/
+    ._2jry ._9-_._3j7n {
+        background-image: /*[[enable-reactions]]*/;
+        background-position: -190px -7px;
+    }
+    /*Sad*/
+    ._2jry ._9-_._3j7r {
+        background-image: /*[[enable-reactions]]*/;
+        background-position: -250px -7px;
+    }
+    /*Angry*/
+    ._2jry ._9-_._3j7q {
+        background-image: /*[[enable-reactions]]*/;
+        background-position: -312px -7px;
+    }
+    /* Features Test */
+    /* Chat */
+    ._568- {
+        color: #000 !important;
+    }
+    ._2v5j {
+        opacity: /*[[toggle-chat]]*/;
+    }
+    ._5w1r span {
+        opacity: 1;
+        font-weight: bold !important;
+    }
+    /* Notifications Avatars */
+    ._ors ._33h {
+        border-radius: 50px !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    }
+    /* Video player */
+    ._gn4, ._i5q ._2-mn, ._i5q ._2-mp, ._gn0._gn1 ._gn5 {
+        background-color: /*[[header-color]]*/ !important;
+        box-shadow: 0 0 10px 2px /*[[header-color]]*/;
+    }
+    ._38a2 {
+        transition: 300ms all ease-in-out !important;
+    }
+    ._38a2:hover {
+        transition: 300ms all ease-in-out !important;
+        box-shadow: 0 0px 10px 5px /*[[header-color]]*/ !important;
+        z-index: 1000 !important;
+    }
+    ._5g7d {
+        box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
+    }
+    /* Pictures */
+    .fbPhotoSnowliftContainer .snowliftPayloadRoot .uiContextualLayerParent, ._n9, .uiScrollableAreaContent, .fbPhotosSnowliftFeedback, ._2-sx img {
+        -webkit-animation-name: fadeIn !important;
+        -moz-animation-name: fadeIn !important;
+        animation-name: fadeIn !important;
+        -webkit-animation-duration: 500ms !important;
+        -moz-animation-duration: 500ms !important;
+        animation-duration: 500ms !important;
+        -webkit-animation-fill-mode: both !important;
+        -moz-animation-fill-mode: both !important;
+        animation-fill-mode: both !important;
+    }
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    /* Colors on borders */
+    ._4-u2, ._4__g.escapeHatchMinimal, ._2w3 > ._30f {
+        border-top: 1px solid #0084FF !important;
+        border-radius: 0px !important;
+    }
+    ._3cz {
+        background: #fafafa !important;
+    }
+    /* Glowing status indicator */
+    ._568z span {
+        -webkit-box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
+        -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
+        box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
+        /*animation:pulse 2s infinite alternate;*/
+    }
+    /*@keyframes pulse {
+    from { box-shadow:0px 0px 5px 1px rgb(66, 183, 42); }
+    to { box-shadow: 0px 0px 10px 1px rgb(66, 183, 42); }
+    }*/
+    /* Pictures scale */
+    ._53s, .fbPhotoCurationControlWrapper, ._2eea {
+        transform: scale(1) !important;
+        transition: 300ms all ease-in-out !important;
+    }
+    ._53s:hover, .fbPhotoCurationControlWrapper:hover, ._2eea:hover {
+        transform: /*[[toggle-scale]]*/;
+        transition: 300ms all ease-in-out !important;
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
+        z-index: 1 !important;
+    }
+    /* Feeling/Activity, Check In */
+    ._599m, ._5u91 {
+        border: none !important;
+        transition: all 300ms ease-in-out !important;
+        background-color: inherit !important;
+    }
+    ._599m:hover, ._599m:active, ._5u91:hover, ._5u91:active {
+        background-color: #039BE5 !important;
+        border: none !important;
+        transition: all 300ms ease-in-out !important;
+    }
+    /* Page plugins (Embedded on other websites) */
+    ._1drm._1ds3 ._1drn, ._54ru, ._5pat ._5sq7 {
+        border-radius: 100px !important;
+        box-shadow: 0px 4px 4px -2px #bfbfbf !important;
+        outline: none !important;
+    }
+    /* Scrollbar */
+    *::-webkit-scrollbar {
+        background: #fafafa !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: /*[[header-color]]*/ !important;
+        box-shadow: 0 0 10px #a6a6a6;
+    }
 }
