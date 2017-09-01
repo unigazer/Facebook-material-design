@@ -5,29 +5,23 @@
         background: linear-gradient(120deg, #fafafa, #fff) !important;
     }
     /* Facebook header */
-    ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader {
+    ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader, ._53jh {
         background-color: /*[[header-color]]*/ !important;
+        background-image: none !important;
         border-bottom: /*[[header-color]]*/ !important;
         box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
     }
     ._4-u2 {
         border-radius: 0px !important;
     }
-    ._1k67 ._2s25:after {
+    ._1k67 ._2s25:after, ._698 ._5q6s::after, ._1qp6 .fbProfileBrowserListContainer .fbProfileBrowserListItem, html ._262m ._698,
+    html ._5k35 ._5k3a, ._5mub, ._5mtz, ._5d3_::after, ._gx8::after, ._4cbv, ._14b9 ._r95, ._14b9 ._gx6, ._14b9 ._r95, ._6l-:after,
+    ._5frj::after,  ._2cpc::after, ._35za {
         border: none !important;
     }
     ._5v9k .UFIAddComment .UFIImageBlockImage:after, ._5v9k .UFIComment .UFIImageBlockImage:after {
         border: none !important;
         border-radius: 60px !important;
-    }
-    ._698 ._5q6s::after {
-        border: none !important;
-    }
-    ._1qp6 .fbProfileBrowserListContainer .fbProfileBrowserListItem, html ._262m ._698 {
-        border: none !important;
-    }
-    html ._5k35 ._5k3a, ._5mub, ._5mtz {
-        border: none !important;
     }
     ._5mt- {
         outline: none !important;
@@ -36,18 +30,6 @@
         border: none !important;
         border-radius: 100px !important;
         box-shadow: 0 4px 4px -2px #bfbfbf !important;
-    }
-    ._5d3_::after, ._gx8::after, ._4cbv {
-        border: none !important;
-    }
-    ._14b9 ._r95, ._14b9 ._gx6, ._14b9 ._r95, ._6l-:after {
-        border: none !important;
-    }
-    ._5frj::after {
-        border: none !important;
-    }
-    ._2cpc::after, ._35za {
-        border: none !important;
     }
     /* Post box */
     .timestampContent, ._ipn._ipn a, ._3csb._3csb a, ._1p1v, ._ipn, ._2ah8, ._26z1, ._2hm5 {
@@ -109,7 +91,7 @@
         animation-name: /*[[toggle-animation]]*/;
     }
     /* Additional animation */
-    .UFICommentBody span, .pam {
+    .UFIRow, .pam {
         -webkit-animation-name: fadeIn !important;
         -moz-animation-name: fadeIn !important;
         animation-name: fadeIn !important;
@@ -156,7 +138,7 @@
         padding-left: 8px !important;
     }
     /* Comments color */
-    ._5vsj .UFIRow, ._5vsj._5vsj._5vsj, ._57d8, ._3ubp {
+    ._5vsj .UFIRow, ._5vsj._5vsj._5vsj, ._57d8, ._3ubp, .fbTimelineFeedbackActions {
         background-color: #fafafa !important;
     }
     /*Suggested Pages & Suggested Groups*/
