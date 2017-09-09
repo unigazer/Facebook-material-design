@@ -2,7 +2,7 @@
 {
      /* Background color */
      ._5vb_, ._5vb_ #contentCol, .timelineLayout, .fbTimelineSection, ._4-u5, ._2h4b, ._5sic, ._50dz > div, ._2d14, html ._4lh, ._4gd5 {
-        background: linear-gradient(120deg, #fafafa, #fff) !important;
+        background: #fafafa !important;
     }
     /* Facebook header */
     ._2s1x ._2s1y, ._4ee_, ._zpj, ._1l-e, #booklet #pageheader, ._53jh {
@@ -52,43 +52,35 @@
     ._15nc, ._3z4s, ._4psx, ._2h00, ._1b6y, ._wza, ._5yb1, ._3-g8, ._4__g.escapeHatchMinimal {
         box-shadow: 0 4px 4px -2px #bfbfbf !important;
         /* Animation */
-        -webkit-animation-name: /*[[toggle-animation]]*/;
-        -moz-animation-name: /*[[toggle-animation]]*/;
-        animation-name: /*[[toggle-animation]]*/;
-        -webkit-animation-duration: 600ms !important;
-        -moz-animation-duration: 600ms !important;
-        animation-duration: 600ms !important;
-        -webkit-animation-fill-mode: both !important;
-        -moz-animation-fill-mode: both !important;
-        animation-fill-mode: both !important;
+        animation: /*[[toggle-animation]]*/;
+        animation-duration: 600ms;
+        backface-visibility: hidden; 
     }
-    @-webkit-keyframes fadeInUp {
-        from {
-            opacity: 0;
-            -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    @keyframes pullUp {
+    0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0, 0, 0); 
+       }
+    30% {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: scale3d(1, 0, 1);
+        transform: scale3d(1, 0, 1);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom; 
         }
-        to {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
+    100% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1); 
+       } 
     }
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-        }
-        to {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
-    }
-    .fadeInUp {
+    .pullUp {
         -webkit-animation-name: /*[[toggle-animation]]*/;
         animation-name: /*[[toggle-animation]]*/;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; 
     }
     /* Additional animation */
     .UFIRow, .pam {
@@ -123,6 +115,10 @@
         animation-name: fadeIn;
     }
     /* Comments */
+    ._605a ._5v9k .UFIAddComment .UFIImageBlockImage, ._605a ._5v9k .UFIComment .UFIImageBlockImage {
+        border-radius: 100px !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf;
+    }
     .UFICommentContent {
         font-weight: 600 !important;
     }
@@ -138,7 +134,7 @@
         padding-left: 8px !important;
     }
     /* Comments color */
-    ._5vsj .UFIRow, ._5vsj._5vsj._5vsj, ._57d8, ._3ubp, .fbTimelineFeedbackActions {
+    ._5vsj .UFIRow, ._5vsj._5vsj._5vsj, ._57d8, ._3ubp, .fbTimelineFeedbackActions, .fbTimelineUFI .UFIUnseenItem, .UFIRow  {
         background-color: #fafafa !important;
     }
     /*Suggested Pages & Suggested Groups*/
@@ -227,7 +223,7 @@
         font-weight: bold;
     }
     /* Profile */
-    .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc, ._487j > img {
+    .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc, ._487j > img, ._62bh._62bh {
         border-radius: 100px !important;
         border: none !important;
         box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -243,7 +239,7 @@
         border-radius: 60px !important;
         border: none !important;
     }
-    ._4ld-, ._33h._33h, ._54ru, ._55lt img, ._2akn img, ._4v9u img, ._4tdw img {
+    ._4ld-, ._33h._33h, ._54ru, ._2akn img, ._4v9u img, ._4tdw img {
         border-radius: 60px !important;
         border: none !important;
         box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -344,10 +340,13 @@
     /* Some adittional fixes - inbox profile pics on main page */
     ._1y2l ._4qeb {
         height: inherit !important;
-        width: 100% !important;
+        box-shadow: 0 4px 4px -2px #bfbfbf;
     }
     ._1y2l ._4qeb > div {
         margin: 0 !important;
+    }
+    ._55lt img {
+        border-radius: 100px;
     }
     /*==========================================================
 	     Facebook Animated Reactions
@@ -371,7 +370,7 @@
     }
     /* BIG EMOJIS */
     /*Like*/
-    ._2jry ._9-_._3j7l {
+    ._2jry ._9-_._3j7l._hly {
         background-image: /*[[enable-reactions]]*/;
         background-position: 1px -7px;
     }
@@ -412,6 +411,9 @@
         opacity: 1;
         font-weight: bold !important;
     }
+    ._qhr ._55lq, ._605a ._12um ._55lq {
+        box-shadow: 0 4px 4px -2px #bfbfbf;
+    }
     /* Notifications Avatars */
     ._ors ._33h {
         border-radius: 50px !important;
@@ -432,6 +434,10 @@
     }
     ._5g7d {
         box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
+    }
+    /* Fix for the Chrome fullscreen issue. Also removed extra props from "Shadows on boxes" */
+    ._1hwh {
+        margin-left: 0 !important;
     }
     /* Pictures */
     .fbPhotoSnowliftContainer .snowliftPayloadRoot .uiContextualLayerParent, ._n9, .uiScrollableAreaContent, .fbPhotosSnowliftFeedback, ._2-sx img {
