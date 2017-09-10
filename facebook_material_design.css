@@ -1,7 +1,8 @@
 @-moz-document url-prefix("https://www.facebookcorewwwi.onion/"), url-prefix("https://connect.facebook.net/"), url-prefix("https://www.facebook.com/"), regexp("http(s)?://.*\\.facebook\\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*") 
 {
-     /* Background color */
-     ._5vb_, ._5vb_ #contentCol, .timelineLayout, .fbTimelineSection, ._4-u5, ._2h4b, ._5sic, ._50dz > div, ._2d14, html ._4lh, ._4gd5 {
+/* Background color */
+    ._5vb_, ._5vb_ #contentCol, .timelineLayout, .fbTimelineSection, ._4-u5, ._2h4b, ._5sic, ._50dz > div, 
+    ._2d14, html ._4lh, ._4gd5, ._55w7 {
         background: #fafafa !important;
     }
     /* Facebook header */
@@ -138,7 +139,8 @@
         background-color: #fafafa !important;
     }
     /*Suggested Pages & Suggested Groups*/
-    .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column {
+    .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, 
+    ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column, ._4by1 {
         display: /*[[toggle-display]]*/;
     }
     ._64b {
