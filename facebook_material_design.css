@@ -2,7 +2,7 @@
 {
 /* Background color */
     ._5vb_, ._5vb_ #contentCol, .timelineLayout, .fbTimelineSection, ._4-u5, ._2h4b, ._5sic, ._50dz > div, 
-    ._2d14, html ._4lh, ._4gd5, ._55w7 {
+    ._2d14, html ._4lh, ._4gd5, ._55w7, body._5tuq {
         background: #fafafa !important;
     }
     /* Facebook header */
@@ -140,7 +140,7 @@
     }
     /*Suggested Pages & Suggested Groups*/
     .ego_section, #GroupsRHCSuggestionSection, #AssistiveNubsPagelet, .fbNubButton, ._20i8, ._1nao, ._38pe, 
-    ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column, ._4by1 {
+    ._4-u3 ._32x0, ._3lkn, ._1-ib, .home_right_column, ._4by1, ._1ltv {
         display: /*[[toggle-display]]*/;
     }
     ._64b {
@@ -225,7 +225,8 @@
         font-weight: bold;
     }
     /* Profile */
-    .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc, ._487j > img, ._62bh._62bh {
+    .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc, ._487j > img, ._62bh._62bh,
+    ._1ltx {
         border-radius: 100px !important;
         border: none !important;
         box-shadow: 0 4px 4px -2px #bfbfbf !important;
@@ -307,6 +308,16 @@
     }
     ._5ks6 {
         height: 3.5px !important;
+    }
+    ._5l2b a {
+        display: flex !important;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 5%;
+    }
+    ._5l2b a img {
+        width: 200px !important;
+        height: 200px !important;
     }
     /* Some adittional fixes */
     ._3qe1 li._3qe0 {
