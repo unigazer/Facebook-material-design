@@ -236,7 +236,8 @@
     }
     /* Profile */
     .profilePicThumb img, ._2yeu.img, ._1ci, ._1cj, a._8o > img, ._2ilc, ._487j > img, ._62bh._62bh,
-    ._1ltx, ._1xhn, ._605a ._599m .img, ._605a ._43q7 .img, ._24l1 {
+    ._1ltx, ._1xhn, ._605a ._599m .img, ._605a ._43q7 .img, ._24l1, ._5b_f ._5b_g, ._4-u2._2l01._4-u8 > div:nth-child(2) > ul > div:nth-child(1) > table > tbody > tr > td._51m-.vMid._2fb4._2fb5 > img, ._4-u2._2l01._4-u8 > div:nth-child(2) > ul > 
+    div:nth-child(5) > table > tbody > tr > td._51m-.vMid._2fb4._2fb5 > img, ._1st .img, ._2yw8._4bl7 > img {
         background: transparent !important;
         border-radius: 100px !important;
         border: none !important;
@@ -305,6 +306,13 @@
     }
     ._qa1, ._2-0o {
         border: none !important;
+    }
+    .uiButton {
+        transition: all 300ms ease-in-out;
+    }
+    .uiButton:hover {
+        box-shadow: 0 4px 4px -2px #bfbfbf;
+        transition: all 300ms ease-in-out;
     }
     /* Gropus */
     /* Add members to the groups */
