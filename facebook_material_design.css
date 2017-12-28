@@ -860,7 +860,6 @@ div.uiTypeaheadView .selected {
 ._599m,
 ._5u91 {
   border: none !important;
-  transition: all 300ms ease-in-out !important;
   background-color: inherit !important;
 }
 
@@ -870,7 +869,6 @@ div.uiTypeaheadView .selected {
 ._5u91:active {
   background-color: #039BE5 !important;
   border: none !important;
-  transition: all 300ms ease-in-out !important;
 }
 
 
