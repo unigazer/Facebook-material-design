@@ -3,7 +3,12 @@
     --bgd-front: #1c1c1c;
 }
 
-*, ._36nj::before {
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+*,
+._36nj::before {
     border: none !important;
 }
 
@@ -11,7 +16,6 @@ input {
     background: #111 !important;
     color: #bfbfbf !important;
 }
-
 
 ._bui ._5afe,
 ._bui .subitem,
@@ -32,23 +36,30 @@ input {
 .uiHeaderTitle,
 ._55lr,
 ._55oc,
-.noGrip > div > div > div > div > div > div > div._ohe.lfloat,
+.noGrip>div>div>div>div>div>div>div._ohe.lfloat,
 ._7d._6_._76 h2,
 ._7d._6_._76 span,
-#content > div > div > div > div > div._6_._74 > h2,
-#content > div > div > div > div > div._6_._74 > div.mbl._3m9._6o._6s._mf,
+#content>div>div>div>div>div._6_._74>h2,
+#content>div>div>div>div>div._6_._74>div.mbl._3m9._6o._6s._mf,
 .sectionDragHandle,
 ._2yav,
 ._1c03,
 ._4bl9 div,
 ._g3i._50f7,
 ._3-8w,
-._6m2 > div > div.lfloat._ohe > span > div._3ekx._29_4 > div > div._6m7._3bt9,
+._6m2>div>div.lfloat._ohe>span>div._3ekx._29_4>div>div._6m7._3bt9,
 span._2dco,
 ._11c1 ._3scp a,
 ._m_1 ._2aha,
 ._545p,
 ._50nc,
+._38my,
+._19bk,
+._5j0e a,
+._58al::placeholder,
+.nameButton>span:nth-child(1),
+div._ihd._3ma.mbs._6n._6s._6v,
+div._3m9.mbl._6o._6s._mf,
 p {
     color: #bfbfbf !important;
 }
@@ -57,35 +68,33 @@ p {
 .text_exposed_root a,
 .UFICommentContent a,
 .profileLink,
-div._3ubp._sg2 > span._sg1._3qdv > a > span.uiIconText._5qtp,
-#pagelet_reminders > div > div > div > div > a > div > div > span > span > strong,
-#pagelet_rhc_footer > div > div.uiContextualLayerParent > div > div > div._4bl9 > div > a,
-._6b > div > span > a,
+div._3ubp._sg2>span._sg1._3qdv>a>span.uiIconText._5qtp,
+#pagelet_reminders>div>div>div>div>a>div>div>span>span>strong,
+#pagelet_rhc_footer>div>div.uiContextualLayerParent>div>div>div._4bl9>div>a,
+._6b>div>span>a,
 .uiHeaderActions a,
 ._4djt,
 ._1c1m,
 .__tw .jewelFooter a,
-span._33vv > a,
+span._33vv>a,
 ._4-lu,
 ._4bl9 a,
 ._y-c,
-#seo_h1_tag > a,
+#seo_h1_tag>a,
 span._50f5._5kx5,
-span.fwb > a,
+span.fwb>a,
 ._5afx,
-.mtm._5pco > p > a,
+.mtm._5pco>p>a,
 ._50f3 a,
-.title.fsl.fwb.fcb > a,
+.title.fsl.fwb.fcb>a,
 .ellipsis,
 ._6m6 a,
-.UFIRow.UFIPagerRow._4oep.UFILastCommentComponent._2o9m > div > div > a,
+.UFIRow.UFIPagerRow._4oep.UFILastCommentComponent._2o9m>div>div>a,
 ._5qtp,
-._19v8 > strong,
-._fwx > a
-{
+._19v8>strong,
+._fwx>a {
     color: #4080ff !important;
 }
-
 
 /* Background color */
 
@@ -103,18 +112,39 @@ html ._4lh,
 ._55w7,
 body._5tuq,
 ._2tk,
-._oe1 {
+._oe1,
+._3zsi,
+._5ugf,
+._4oes,
+._19z6,
+.fbNub._50mz .fbNubFlyoutFooter,
+.uiTypeahead.mbm.uiGroupsAddTypeaheadView,
+.uiTypeaheadView ul,
+.fbTimelineStickyHeader .back,
+.fbIndex .UIPage_LoggedOut ._-kb ._61s0 ._605a .b_c3pyn-ahh .gecko .x1 .Locale_en_US .cores-gte4 ._19_u .hasAXNavMenubar {
     background: var(--bgd-back) !important;
 }
 
+.ptm.uiBoxWhite.topborder,
+div._4-i2,
+.nameButton {
+    background: var(--bgd-front) !important;
+}
+
+._3m75 .selectedItem ._55yu>a,
+._3m75 .sideNavItem:hover .uiSideNavEditButton a {
+    background-color: var(--bgd-back) !important;
+    transition: none !important;
+}
 
 /* Share window */
+
 body._5crg {
     background: var(--bgd-front) !important;
 }
 
-
 /* Facebook header */
+
 /* Search form */
 
 ._585-,
@@ -130,7 +160,6 @@ body._5crg {
     background: #111 !important;
 }
 
-
 /* Header color */
 
 ._2s1x ._2s1y,
@@ -145,13 +174,19 @@ body._5crg {
     box-shadow: 0 4px 4px -2px #1c1c1c !important;
 }
 
-
 /* Friend requests, Messenger and Notifications */
 
-.__tw div.jewelHeader, 
-.__tw, ._1sdi, 
-.__tw .jewelFooter a, 
-._fyy, 
+._4kny .uiToggle:not([class~="openToggler"]):not([class~="hasNew"]) a:first-child,
+._4kny .uiToggle:not([class~="openToggler"]):not([class~="hasNew"]) a:first-child:active,
+#userNavigationLabel._5lxt {
+    filter: invert(80%);
+}
+
+.__tw div.jewelHeader,
+.__tw,
+._1sdi,
+.__tw .jewelFooter a,
+._fyy,
 .jewelItemNew ._33e,
 ._3nzk .fbRequestList .listGray,
 ._3nzk li.jewelItemNew,
@@ -159,18 +194,18 @@ body._5crg {
     background: var(--bgd-back) !important;
 }
 
-._33c, 
-.uiScrollableAreaWrap > div > div > ul > li {
+._33c,
+.uiScrollableAreaWrap>div>div>ul>li {
     background: var(--bgd-front) !important;
 }
 
-
 /* User controls */
 
-._54ng > .uiScrollableArea > div > div,
-.uiScrollableAreaWrap.scrollable > div > div > ul {
+._54ng>.uiScrollableArea>div>div,
+.uiScrollableAreaWrap.scrollable>div>div>ul {
     background: var(--bgd-back);
 }
+
 ._558b ._54ak {
     border-bottom: none !important;
     padding: 5px 7px 6px;
@@ -178,8 +213,8 @@ body._5crg {
     padding-top: 1px;
 }
 
-
 /* Write a post component */
+
 ._m_1 {
     background: var(--bgd-back) !important;
 }
@@ -190,7 +225,7 @@ body._5crg {
 ._5u91,
 ._5esx ._58ak,
 ._5esl td._5esw,
-._5esl td._5esm:first-child{
+._5esl td._5esm:first-child {
     border: none !important;
     background-color: var(--bgd-back) !important;
 }
@@ -205,11 +240,12 @@ body._5crg {
 
 /* Left sidebar */
 
-._3m75 .sideNavItem ._5afe::after, ._3o_h::after, ._2yaa ._2yau::after {
+._3m75 .sideNavItem ._5afe::after,
+._3o_h::after,
+._2yaa ._2yau::after {
     background: #1c1c1c !important;
     border: 1px solid #1c1c1c !important;
 }
-
 
 /* Right sidebar */
 
@@ -217,16 +253,18 @@ body._5crg {
     background: var(--bgd-back) !important;
 }
 
-#fb_stories_card_root > div,
-#homepage_panel_pagelet > div > div,
-#pagelet_group_rhc > div > div._4-u2._dw8._4-u8 {
+#fb_stories_card_root>div,
+#homepage_panel_pagelet>div>div,
+#pagelet_group_rhc>div>div._4-u2._dw8._4-u8 {
     margin-top: 3.8%;
 }
 
-
 /* Chat on right sidebar (list of contacts) */
 
-._55ln:focus, ._55ln:hover, li.selected ._55ln, .pam {
+._55ln:focus,
+._55ln:hover,
+li.selected ._55ln,
+.pam {
     background: var(--bgd-back) !important;
     box-shadow: none !important;
 }
@@ -235,17 +273,19 @@ body._5crg {
     background: var(--bgd-front) !important;
 }
 
-
 /* Birthday (Right sidebar) */
+
 ._5j06 {
     background: var(--bgd-back) !important;
 }
 
-div._5j04, body > div._10.uiLayer._4-hy._3qw > div._59s7 > div > div > div {
+div._5j04,
+body>div._10.uiLayer._4-hy._3qw>div._59s7>div>div>div {
     background: var(--bgd-front) !important;
 }
 
-div._5a8u._5j04._52jv > div > a, .fwn > a {
+div._5a8u._5j04._52jv>div>a,
+.fwn>a {
     color: #4080ff !important;
 }
 
@@ -253,7 +293,6 @@ div._5a8u._5j04._52jv > div > a, .fwn > a {
     border: #000 !important;
     color: #bfbfbf !important;
 }
-
 
 /* I have no idea what this does, but I can't delete it, it will mess up the style */
 
@@ -303,7 +342,6 @@ html ._5k35 ._5k3a {
     box-shadow: 0 4px 4px -2px #000 !important;
 }
 
-
 /* Post box */
 
 .timestampContent,
@@ -317,120 +355,29 @@ html ._5k35 ._5k3a {
     color: #bfbfbf !important;
 }
 
-
 /* Reactions */
 
-/*==========================================================
-	     Facebook Animated Reactions
-                   Version: 1.1
-	By WhyseMan , forked from BangDroid
-    Based on 'Facebook - Pokémon Emojis by Scheliux' but
-    modified; the big emojis are animated!!
-    The author said that the code is free to modify and redistribute 
-    so I made reactions that you see on Android and iOS applications.
-    ===========================================================*/
-
-
-/*create root class*/
-
-:root {
-    --big-emoji: url('https://i.imgur.com/X6KLUeg.gif');
+._41nt {
+    background: var(--bgd-back);
 }
-
-
-/*Widen reactions popup*/
-
-._iu- {
-    width: 335px;
-}
-
-._iuw,
-._9-_,
-._93m,
-._2jry {
-    width: 56px !important;
-}
-
-
-/* BIG EMOJIS */
-
-
-/*Like*/
-
-._2jry ._9-_._3j7l._hly {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: 1px -7px;
-    background-size: auto !important;
-}
-
-
-/*Love*/
-
-._2jry ._9-_._3j7m {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -68px -6px;
-    background-size: auto !important;
-}
-
-
-/*Haha*/
-
-._2jry ._9-_._3j7o {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -130px -7px;
-    background-size: auto !important;
-}
-
-
-/*Wow*/
-
-._2jry ._9-_._3j7n {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -190px -7px;
-    background-size: auto !important;
-}
-
-
-/*Sad*/
-
-._2jry ._9-_._3j7r {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -250px -7px;
-    background-size: auto !important;
-}
-
-
-/*Angry*/
-
-._2jry ._9-_._3j7q {
-    background-image: /*[[enable-reactions]]*/;
-    background-position: -312px -7px;
-    background-size: auto !important;
-}
-
-/* Remove the background on post boxes */
 
 ._4ar- ._3emk {
     background: none !important;
 }
 
-/* ======== END OF ANIMATED EMOJIS ========= */
-
-
 /* Post attachement */
 
-._6m2 > div > div._42ef,
-._6m2 > div > div.lfloat._ohe{
+._6m2>div>div._42ef,
+._6m2>div>div.lfloat._ohe {
     background: var(--bgd-back) !important;
 }
 
-
 /* Post counters */
 
-._1g5v+._4arz, ._ipo {
+._1g5v+._4arz,
+._ipo {
     background: var(--bgd-front) !important;
 }
-
 
 /* The "Post" button */
 
@@ -479,21 +426,25 @@ html ._5k35 ._5k3a {
 ._9jo li._54ne,
 ._9jo li.navSubmenu a:hover,
 ._558b ._54nc:hover {
-    background-color: /*[[header-color]]*/ !important;
+    background-color: #4080FF !important;
 }
-
 
 /* Dropdown menu for posts */
 
-.uiContextualLayer.uiContextualLayerBelowRight > div > div > ul {
+.uiContextualLayer.uiContextualLayerBelowRight>div>div>ul,
+._517h {
     background: var(--bgd-back);
 }
 
-._2ezy, ._54nh {
-    color: #fff !important;
+._517h:hover {
+    background: var(--bgd-front);
 }
 
-
+._2ezy,
+._54nh,
+._517h {
+    color: #fff !important;
+}
 
 /* Shadows on boxes */
 
@@ -514,7 +465,7 @@ html ._5k35 ._5k3a {
 ._30d {
     background: var(--bgd-front) !important;
     /* Animation */
-    animation: /*[[toggle-animation]]*/;
+    animation: pullUp;
     animation-duration: 600ms;
     backface-visibility: hidden;
     box-shadow: 0 4px 4px -2px #000;
@@ -522,45 +473,30 @@ html ._5k35 ._5k3a {
 
 @keyframes pullUp {
     0% {
-        -webkit-transform: scale3d(0, 0, 0);
         transform: scale3d(0, 0, 0);
     }
     30% {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        -webkit-transform: scale3d(1, 0, 1);
         transform: scale3d(1, 0, 1);
-        -webkit-transform-origin: center bottom;
         transform-origin: center bottom;
     }
     100% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
         animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
 }
 
 .pullUp {
-    -webkit-animation-name: /*[[toggle-animation]]*/;
-    animation-name: /*[[toggle-animation]]*/;
-    -webkit-backface-visibility: hidden;
+    animation-name: pullUp;
     backface-visibility: hidden;
 }
-
 
 /* Additional animation */
 
 .UFIRow,
-.uiContextualLayerPositioner._53ii._4-7n.uiLayer.uiContextualLayerPositionerFixed > div > div > div > div > div > div > div > div > table > tbody > tr > td {
-    -webkit-animation-name: fadeIn !important;
-    -moz-animation-name: fadeIn !important;
+.uiContextualLayerPositioner._53ii._4-7n.uiLayer.uiContextualLayerPositionerFixed>div>div>div>div>div>div>div>div>table>tbody>tr>td {
     animation-name: fadeIn !important;
-    -webkit-animation-duration: 1s !important;
-    -moz-animation-duration: 1s !important;
     animation-duration: 1s !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
     animation-fill-mode: both !important;
 }
 
@@ -587,10 +523,13 @@ html ._5k35 ._5k3a {
     animation-name: fadeIn;
 }
 
-
 /* Comments */
 
 ._fmi {
+    background: var(--bgd-back) !important;
+}
+
+.UFICommentActorAndBody {
     background: var(--bgd-back) !important;
 }
 
@@ -621,7 +560,6 @@ a.uiLinkSubtle,
     padding-left: 8px !important;
 }
 
-
 /* Pinned comment */
 
 .UFIContainer .UFILivePinnedComment.UFIComment {
@@ -629,7 +567,6 @@ a.uiLinkSubtle,
     padding: 2%;
     border: none !important;
 }
-
 
 /* Comments color */
 
@@ -645,27 +582,29 @@ a.uiLinkSubtle,
     background-color: var(--bgd-front) !important;
 }
 
-
 /* Going to an event on home page */
-div._5pcr.userContentWrapper > div._1dwg._1w_m._q7o > div:nth-child(2) > div._3x-2 > div > div > div > div > div._3z2._3z3._2v9b > div > div {
+
+div._5pcr.userContentWrapper>div._1dwg._1w_m._q7o>div:nth-child(2)>div._3x-2>div>div>div>div>div._3z2._3z3._2v9b>div>div {
     background: var(--bgd-back) !important;
 }
 
-div._5pcr.userContentWrapper > div._1dwg._1w_m._q7o > div:nth-child(2) > div._3x-2 > div > div > div > div > div._3z2._3z3._2v9b > div > div > span,
-._19ab > span > a {
+div._5pcr.userContentWrapper>div._1dwg._1w_m._q7o>div:nth-child(2)>div._3x-2>div>div>div>div>div._3z2._3z3._2v9b>div>div>span,
+._19ab>span>a {
     background: var(--bgd-front) !important;
 }
 
-
-/*Suggested Pages & Suggested Groups*/
+/* Suggested Pages & Suggested Groups */
 
 #pagelet_ego_pane>div:nth-child(1)>div,
 #pagelet_ego_pane>div:nth-child(2)>div,
+#pagelet_ego_pane > div:nth-child(3)>div,
+#homepage_panel_pagelet,
 #pagelet_ego_contextual_group>div>div,
+#pagelet_gaming_destination_rhc,
 a.fbNubButton,
-#fbPhotoSnowliftDetails > div._5ciw.rhcFooter,
-#contentArea > div._63_q  {
-    display: /*[[toggle-display]]*/;
+#fbPhotoSnowliftDetails>div._5ciw.rhcFooter,
+#contentArea>div._63_q {
+  display: none !important;
 }
 
 ._64b {
@@ -714,9 +653,11 @@ a.fbNubButton,
 .fbNub._50mz .fbNubFlyoutBody {
     background: var(--bgd-front) !important;
 }
+
 ._552h {
     background: var(--bgd-back) !important;
 }
+
 ._552n {
     background: var(--bgd-front) !important;
 }
@@ -724,14 +665,8 @@ a.fbNubButton,
 ._d97,
 ._d97 span,
 ._o46._3i_m ._3058 {
-    -webkit-animation-name: slideInUp !important;
-    -moz-animation-name: slideInUp !important;
     animation-name: slideInUp !important;
-    -webkit-animation-duration: 300ms !important;
-    -moz-animation-duration: 300ms !important;
     animation-duration: 300ms !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
     animation-fill-mode: both !important;
 }
 
@@ -749,7 +684,6 @@ a.fbNubButton,
     animation-name: slideInUp;
 }
 
-
 /* End of the addition animation */
 
 html ._6-d .fbTimelineSection {
@@ -764,7 +698,6 @@ html ._6-d .fbTimelineSection {
     box-shadow: 0 4px 4px -2px #000 !important;
 }
 
-
 /* Messages */
 
 ._2w7 img {
@@ -772,7 +705,7 @@ html ._6-d .fbTimelineSection {
 }
 
 ._1ht1._1ht2 {
-    background-color: /*[[header-color]]*/ !important;
+    background-color: #4080FF !important;
 }
 
 ._1ht7,
@@ -780,14 +713,12 @@ html ._6-d .fbTimelineSection {
     color: #000000 !important;
 }
 
-
 /* Seen */
 
 ._510g {
     color: #bfbfbf !important;
     font-weight: bold;
 }
-
 
 /* Profile */
 
@@ -823,7 +754,6 @@ a._8o>img,
 #hometown>div>div._4bl9 {
     height: 40px !important;
 }
-
 
 /* Pointer for "was with" on map */
 
@@ -902,7 +832,8 @@ a._8o>img,
 ._5vb_ ._5pr2.fbChatSidebar,
 .fbCalendar ._5pr2.fbChatSidebar,
 ._1t4w ._5pr2.fbChatSidebar,
-.timelineLayout ._5pr2.fbChatSidebar {
+.timelineLayout ._5pr2.fbChatSidebar,
+.fbChatSidebarMessage.error {
     background-color: var(--bgd-front) !important;
     box-shadow: none !important;
 }
@@ -925,7 +856,6 @@ a._8o>img,
     border-radius: 60px !important;
 }
 
-
 /* Pages */
 
 ._3f-h._3f-i,
@@ -947,9 +877,7 @@ a._8o>img,
     box-shadow: 0 4px 4px -2px #000 !important;
 }
 
-
 /* Groups */
-
 
 /* Add members to the groups */
 
@@ -983,7 +911,6 @@ div.uiTypeaheadView .selected {
 ._4-jy {
     height: 90px !important;
 }
-
 
 /* Some adittional fixes */
 
@@ -1043,7 +970,6 @@ div.uiTypeaheadView .selected {
     background: var(--bgd-front);
 }
 
-
 /* Some adittional fixes - inbox profile pics on main page */
 
 ._1y2l ._4qeb {
@@ -1059,8 +985,7 @@ div.uiTypeaheadView .selected {
     border-radius: 100px;
 }
 
-
-/* Iinbox full page */
+/* Inbox full page */
 
 ._4sp8 {
     background: var(--bgd-back) !important;
@@ -1084,9 +1009,7 @@ h4._1lj0,
     background: var(--bgd-front) !important;
 }
 
-
 /* Features Test */
-
 
 /* Chat */
 
@@ -1095,7 +1018,7 @@ h4._1lj0,
 }
 
 ._2v5j {
-    opacity: /*[[toggle-chat]]*/;
+    opacity: 0.9 !important;
 }
 
 ._5w1r span {
@@ -1108,7 +1031,6 @@ h4._1lj0,
     box-shadow: 0 4px 4px -2px #000 !important;
 }
 
-
 /* Notifications Avatars */
 
 ._ors ._33h {
@@ -1116,43 +1038,46 @@ h4._1lj0,
     box-shadow: 0 4px 4px -2px #000 !important;
 }
 
-
 /* Video player */
 
-._gn4,
-._i5q ._2-mn,
-._i5q ._2-mp,
+._2yu9,
+._2w_u ._3pat,
+._2w_u ._3par,
 ._gn0._gn1 ._gn5 {
-    background-color: /*[[header-color]]*/ !important;
-    box-shadow: 0 0 10px 2px /*[[header-color]]*/;
-    transition: 200ms all ease-in-out !important;
+  background-color: /*[[header-color]]*/ !important;
+  box-shadow: 0 0 10px 2px /*[[header-color]]*/;
+  transition: 200ms all ease-in-out !important;
 }
 
-._3i5f {
+._132c {
   background-color: /*[[header-color]]*/ !important;
 }
 
 ._38a2 {
-    transition: 300ms all ease-in-out !important;
+  transition: 300ms all ease-in-out !important;
 }
 
 ._38a2:hover {
-    transition: 300ms all ease-in-out !important;
-    box-shadow: 0 0px 10px 5px /*[[header-color]]*/ !important;
-    z-index: 1000 !important;
+  transition: 300ms all ease-in-out !important;
+  box-shadow: 0 0px 10px 5px /*[[header-color]]*/ !important;
+  z-index: 1000 !important;
 }
 
 ._5g7d {
-    box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
+  box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
 }
 
-
-/* Fix for the Chrome fullscreen issue. Also removed extra props from "Shadows on boxes" */
-
-._1hwh {
-    margin-left: 0 !important;
+._5-lm {
+    background: var(---bgd-back) !important;
+}
+  
+._6444 {
+background: var(--bgd-front) !important;
 }
 
+._1rgw, ._1rg- {
+color: #bfbfbf !important;
+}
 
 /* Pictures */
 
@@ -1161,14 +1086,8 @@ h4._1lj0,
 .uiScrollableAreaContent,
 .fbPhotosSnowliftFeedback,
 ._2-sx img {
-    -webkit-animation-name: fadeIn !important;
-    -moz-animation-name: fadeIn !important;
     animation-name: fadeIn !important;
-    -webkit-animation-duration: 500ms !important;
-    -moz-animation-duration: 500ms !important;
     animation-duration: 500ms !important;
-    -webkit-animation-fill-mode: both !important;
-    -moz-animation-fill-mode: both !important;
     animation-fill-mode: both !important;
 }
 
@@ -1191,10 +1110,16 @@ h4._1lj0,
 }
 
 .fadeIn {
-    -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
 
+._4d3w._u77 ._3t09 {
+    background: var(--bgd-back) !important;
+}
+
+._4d3w._u77 .fbPhotosSnowboxFeedbackInput {
+    background: var(--bgd-front) !important;
+}
 
 /* Colors on borders */
 
@@ -1209,15 +1134,35 @@ h4._1lj0,
     background: var(--bgd-back) !important;
 }
 
-
 /* Glowing status indicator */
 
 ._568z span {
-    -webkit-box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
-    -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
-    box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
+    animation: pulse-highlight 2s infinite
 }
 
+@-webkit-keyframes pulse-highlight {
+    0% {
+        box-shadow: 0 0 0 0 rgba(184, 214, 244, 0.4)
+    }
+    70% {
+        box-shadow: 0 0 0 10px transparent
+    }
+    100% {
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+
+@keyframes pulse-highlight {
+    0% {
+        box-shadow: 0 0 0 0 rgba(184, 214, 244, 0.4)
+    }
+    70% {
+        box-shadow: 0 0 0 10px transparent
+    }
+    100% {
+        box-shadow: 0 0 0 0 transparent
+    }
+}
 
 /* Pictures scale */
 
@@ -1231,12 +1176,11 @@ h4._1lj0,
 ._53s:hover,
 .fbPhotoCurationControlWrapper:hover,
 ._2eea:hover {
-    transform: /*[[toggle-scale]]*/;
+    transform: scale(1.2) !important;
     transition: 300ms all ease-in-out !important;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
     z-index: 1 !important;
 }
-
 
 /* Page plugins (Embedded on other websites) */
 
@@ -1255,6 +1199,7 @@ h4._1lj0,
 ::-webkit-scrollbar-thumb {
     background: #000 !important;
 }
+
 input._58al::-webkit-input-placeholder {
     color: #000000 !important;
 }
