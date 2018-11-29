@@ -1,8 +1,13 @@
+body {
+    font-family: system-ui !important;
+}
+
 /* Background color */
 
+._19z6,
 ._5vb_,
 ._5vb_ #contentCol,
-.timelineLayout,
+._4lh .fbTimelineTimePeriod,
 .fbTimelineSection,
 ._4-u5,
 ._2h4b,
@@ -14,13 +19,22 @@ html ._4lh,
 ._55w7,
 body._5tuq,
 ._2tk,
-._oe1 {
-  background: #fafafa !important;
+._oe1,
+._3h78,
+._ky0,
+._4-bi,
+._3y04,
+._1hwa {
+  background: #fff !important;
 }
 
+.fbIndex .gradient {
+    background: none !important;
+}
 
 /* Facebook header */
 
+._2is9 ._5w2q,
 ._2s1x ._2s1y,
 ._4ee_,
 ._zpj,
@@ -30,9 +44,8 @@ body._5tuq,
   background-color: /*[[header-color]]*/ !important;
   background-image: none !important;
   border-bottom: /*[[header-color]]*/ !important;
-  box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
+  box-shadow: 0 0 1em /*[[header-color]]*/ !important;
 }
-
 
 /* Right sidebar */
 
@@ -40,6 +53,10 @@ body._5tuq,
 #homepage_panel_pagelet>div>div,
 #pagelet_group_rhc>div>div._4-u2._dw8._4-u8 {
   margin-top: 3.8%;
+}
+
+#fb_stories_card_root {
+    box-shadow: 0 4px 4px -2px #bfbfbf;
 }
 
 ._4-u2 {
@@ -88,7 +105,6 @@ html ._5k35 ._5k3a {
   box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
-
 /* Post box */
 
 .timestampContent,
@@ -101,7 +117,6 @@ html ._5k35 ._5k3a {
 ._2hm5 {
   color: #000 !important;
 }
-
 
 /* The "Post" button */
 
@@ -152,7 +167,6 @@ html ._5k35 ._5k3a {
 ._558b ._54nc:hover {
   background-color: /*[[header-color]]*/ !important;
 }
-
 
 /* Shadows on boxes */
 
@@ -209,7 +223,6 @@ html ._5k35 ._5k3a {
   backface-visibility: hidden;
 }
 
-
 /* Additional animation */
 
 .UFIRow,
@@ -248,8 +261,8 @@ html ._5k35 ._5k3a {
   animation-name: fadeIn;
 }
 
-
 /* Comments */
+
 ._3-a6._1blz .UFICommentActorAndBody {
   background: #fafafa !important;
 }
@@ -281,7 +294,6 @@ a.uiLinkSubtle,
   padding-left: 8px !important;
 }
 
-
 /* Pinned comment */
 
 .UFIContainer .UFILivePinnedComment.UFIComment {
@@ -289,7 +301,6 @@ a.uiLinkSubtle,
   padding: 2%;
   border: none !important;
 }
-
 
 /* Comments color */
 
@@ -305,7 +316,6 @@ a.uiLinkSubtle,
   background-color: #fff !important;
 }
 
-
 /*Suggested Pages & Suggested Groups*/
 
 #pagelet_ego_pane>div:nth-child(1)>div,
@@ -313,6 +323,7 @@ a.uiLinkSubtle,
 #pagelet_ego_pane > div:nth-child(3)>div,
 #homepage_panel_pagelet,
 #pagelet_ego_contextual_group>div>div,
+#pagelet_gaming_destination_rhc,
 a.fbNubButton,
 #fbPhotoSnowliftDetails>div._5ciw.rhcFooter,
 #contentArea>div._63_q {
@@ -341,13 +352,6 @@ a.fbNubButton,
   border-radius: 100px !important;
 }
 
-._53jh {
-  background-color: #4a90e2 !important;
-  background-image: none !important;
-  border-bottom: 1px solid #4a90e2 !important;
-  box-shadow: 0 4px 4px -2px #4a90e2 !important;
-}
-
 ._6wl {
   background: #64DD17 !important;
   background-color: #64DD17 !important;
@@ -360,7 +364,6 @@ a.fbNubButton,
   border-bottom: 1px solid /*[[header-color]]*/ !important;
   box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
 }
-
 
 /* Chat effect */
 
@@ -392,7 +395,6 @@ a.fbNubButton,
   animation-name: slideInUp;
 }
 
-
 /* End of the addition animation */
 
 html ._6-d .fbTimelineSection {
@@ -406,7 +408,6 @@ html ._6-d .fbTimelineSection {
   box-shadow: 0 4px 4px -2px #bfbfbf !important;
   border: none !important;
 }
-
 
 /* Messages */
 
@@ -423,14 +424,12 @@ html ._6-d .fbTimelineSection {
   color: #000000 !important;
 }
 
-
 /* Seen */
 
 ._510g {
   color: #000000 !important;
   font-weight: bold;
 }
-
 
 /* Profile */
 
@@ -466,7 +465,6 @@ a._8o>img,
 #hometown>div>div._4bl9 {
   height: 40px !important;
 }
-
 
 /* Pointer for "was with" on map */
 
@@ -523,11 +521,11 @@ a._8o>img,
   text-align: center !important;
 }
 
-._7ls,
 ._s0,
+._7ls,
 ._7l2,
 ._rw img {
-  border-radius: 100px !important;
+  border-radius: 200px !important;
   box-shadow: 0 4px 4px -2px #bfbfbf !important;
   border: none !important;
 }
@@ -562,7 +560,6 @@ a._8o>img,
   border-radius: 60px !important;
 }
 
-
 /* Pages */
 
 ._3f-h._3f-i,
@@ -584,9 +581,7 @@ a._8o>img,
   transition: all 300ms ease-in-out;
 }
 
-
 /* Groups */
-
 
 /* Add members to the groups */
 
@@ -621,8 +616,13 @@ div.uiTypeaheadView .selected {
   height: 90px !important;
 }
 
-
 /* Some adittional fixes */
+
+._55ln:focus, ._55ln:hover, li.selected ._55ln {
+    background-color: #f9f9f9 !important;
+    box-shadow: 1px 0 0 #f9f9f9 inset !important;
+    text-decoration: none;
+}
 
 ._3qe1 li._3qe0 {
   border-color: #4a90e2 !important;
@@ -680,7 +680,6 @@ div.uiTypeaheadView .selected {
   background: #fff;
 }
 
-
 /* Some adittional fixes - inbox profile pics on main page */
 
 ._1y2l ._4qeb {
@@ -721,11 +720,17 @@ div.uiTypeaheadView .selected {
   font-weight: bold !important;
 }
 
-._qhr ._55lq,
-._605a ._12um ._55lq {
-  box-shadow: 0 4px 4px -2px #bfbfbf;
+._qhr ._55lq {
+  width: 32px !important;
+  height: auto !important;
 }
 
+._qhr ._55lq,
+._605a ._12um ._55lq {
+  width: 32px !important;
+  height: auto !important;
+  box-shadow: 0 4px 4px -2px #bfbfbf;
+}
 
 /* Notifications Avatars */
 
@@ -734,19 +739,18 @@ div.uiTypeaheadView .selected {
   box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
-
 /* Video player */
 
-._gn4,
-._i5q ._2-mn,
-._i5q ._2-mp,
+._2yu9,
+._2w_u ._3pat,
+._2w_u ._3par,
 ._gn0._gn1 ._gn5 {
   background-color: /*[[header-color]]*/ !important;
   box-shadow: 0 0 10px 2px /*[[header-color]]*/;
   transition: 200ms all ease-in-out !important;
 }
 
-._3i5f {
+._132c {
   background-color: /*[[header-color]]*/ !important;
 }
 
@@ -764,13 +768,11 @@ div.uiTypeaheadView .selected {
   box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
 }
 
-
 /* Fix for the Chrome fullscreen issue. Also removed extra props from "Shadows on boxes" */
 
 ._1hwh {
   margin-left: 0 !important;
 }
-
 
 /* Pictures */
 
@@ -816,6 +818,7 @@ div.uiTypeaheadView .selected {
 
 /* Colors on borders */
 
+._30d,
 ._4-u2,
 ._4__g.escapeHatchMinimal,
 ._2w3>._30f {
@@ -831,9 +834,35 @@ div.uiTypeaheadView .selected {
 /* Glowing status indicator */
 
 ._568z span {
-  -webkit-box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
-  -moz-box-shadow: 0px 0px 10px 1px rgb(66, 183, 42);
-  box-shadow: 0px 0px 3px 1px rgb(66, 183, 42);
+  animation: pulse-highlight 2s infinite
+}
+
+@-webkit-keyframes pulse-highlight {
+    0% {
+        box-shadow: 0 0 0 0 rgba(184,214,244,0.4)
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px transparent
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+
+@keyframes pulse-highlight {
+    0% {
+        box-shadow: 0 0 0 0 rgba(184,214,244,0.4)
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px transparent
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 transparent
+    }
 }
 
 /* Pictures scale */
@@ -854,7 +883,6 @@ div.uiTypeaheadView .selected {
   z-index: 1 !important;
 }
 
-
 /* Feeling/Activity, Check In */
 
 ._599m,
@@ -871,6 +899,11 @@ div.uiTypeaheadView .selected {
   border: none !important;
 }
 
+/* Games */
+
+._6gug {
+  box-shadow: 0px 4px 4px -2px #bfbfbf;
+}
 
 /* Page plugins (Embedded on other websites) */
 
