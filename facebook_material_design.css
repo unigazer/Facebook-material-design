@@ -1,3 +1,11 @@
+:root {
+    --header-color: /*[[header-color]]*/;
+    --toggle-animation: /*[[toggle-animation]]*/;
+    --toggle-display: /*[[toggle-display]]*/;
+    --toggle-chat: /*[[toggle-chat]]*/;
+    --toggle-scale: /*[[toggle-scale]]*/;
+}
+
 body {
     font-family: system-ui !important;
 }
@@ -26,7 +34,7 @@ body._5tuq,
 ._3y04,
 ._1hwa,
 ._6yx0 {
-  background: #fff !important;
+    background: #fff !important;
 }
 
 .fbIndex .gradient {
@@ -42,10 +50,10 @@ body._5tuq,
 ._1l-e,
 #booklet #pageheader,
 ._53jh {
-  background-color: /*[[header-color]]*/ !important;
-  background-image: none !important;
-  border-bottom: /*[[header-color]]*/ !important;
-  box-shadow: 0 0 1em /*[[header-color]]*/ !important;
+    background-color: var(--header-color) !important;
+    background-image: none !important;
+    border-bottom: var(--header-color) !important;
+    box-shadow: 0 0 1em var(--header-color) !important;
 }
 
 /* Right sidebar */
@@ -53,7 +61,7 @@ body._5tuq,
 #fb_stories_card_root>div,
 #homepage_panel_pagelet>div>div,
 #pagelet_group_rhc>div>div._4-u2._dw8._4-u8 {
-  margin-top: 3.8%;
+    margin-top: 3.8%;
 }
 
 #fb_stories_card_root {
@@ -61,7 +69,7 @@ body._5tuq,
 }
 
 ._4-u2 {
-  border-radius: 0px !important;
+    border-radius: 0px !important;
 }
 
 ._1k67 ._2s25:after,
@@ -81,29 +89,29 @@ html ._5k35 ._5k3a,
 ._5frj::after,
 ._2cpc::after,
 ._35za {
-  border: none !important;
+    border: none !important;
 }
 
 html ._5k35 ._5k3a {
-  height: 105px !important;
+    height: 105px !important;
 }
 
 ._5v9k .UFIAddComment .UFIImageBlockImage:after,
 ._5v9k .UFIComment .UFIImageBlockImage:after {
-  border: none !important;
-  border-radius: 60px !important;
+    border: none !important;
+    border-radius: 60px !important;
 }
 
 ._5mt- {
-  outline: none !important;
+    outline: none !important;
 }
 
 .art_border:after,
 ._42xb,
 .music_artwork {
-  border: none !important;
-  border-radius: 100px !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border: none !important;
+    border-radius: 100px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
 /* Post box */
@@ -116,7 +124,7 @@ html ._5k35 ._5k3a {
 ._2ah8,
 ._26z1,
 ._2hm5 {
-  color: #000 !important;
+    color: #000 !important;
 }
 
 /* The "Post" button */
@@ -143,9 +151,9 @@ html ._5k35 ._5k3a {
 .openToggler>._5vto._5vto,
 ._3oyq:hover,
 ._zxd:hover {
-  background-color: #4080FF !important;
-  border-color: #4080FF !important;
-  transition: all 300ms ease-in-out;
+    background-color: #4080FF !important;
+    border-color: #4080FF !important;
+    transition: all 300ms ease-in-out;
 }
 
 ._4jy1:hover,
@@ -157,16 +165,16 @@ html ._5k35 ._5k3a {
 ._146s ._5dwo:hover,
 ._2qix:hover,
 ._4i3n ._291t._1kp2:hover {
-  background-color: #0074db !important;
-  border-color: #0074db !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  transition: all 300ms ease-in-out;
+    background-color: #0074db !important;
+    border-color: #0074db !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    transition: all 300ms ease-in-out;
 }
 
 ._9jo li._54ne,
 ._9jo li.navSubmenu a:hover,
 ._558b ._54nc:hover {
-  background-color: /*[[header-color]]*/ !important;
+    background-color: var(--header-color) !important;
 }
 
 /* Shadows on boxes */
@@ -189,117 +197,120 @@ html ._5k35 ._5k3a {
 ._3-g8,
 ._4__g.escapeHatchMinimal,
 ._30d {
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  /* Animation */
-  animation: /*[[toggle-animation]]*/;
-  animation-duration: 600ms;
-  backface-visibility: hidden;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    animation: var(--toggle-animation);
+    animation-duration: 600ms;
+    backface-visibility: hidden;
 }
 
 @keyframes pullUp {
-  0% {
-    -webkit-transform: scale3d(0, 0, 0);
-    transform: scale3d(0, 0, 0);
-  }
-  30% {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: scale3d(1, 0, 1);
-    transform: scale3d(1, 0, 1);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-  100% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+    0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0, 0, 0);
+    }
+
+    30% {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: scale3d(1, 0, 1);
+        transform: scale3d(1, 0, 1);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+
+    100% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .pullUp {
-  -webkit-animation-name: /*[[toggle-animation]]*/;
-  animation-name: /*[[toggle-animation]]*/;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+    -webkit-animation-name: var(--toggle-animation);
+    animation-name: var(--toggle-animation);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /* Additional animation */
 
 .UFIRow,
 .pam {
-  -webkit-animation-name: fadeIn !important;
-  -moz-animation-name: fadeIn !important;
-  animation-name: fadeIn !important;
-  -webkit-animation-duration: 1s !important;
-  -moz-animation-duration: 1s !important;
-  animation-duration: 1s !important;
-  -webkit-animation-fill-mode: both !important;
-  -moz-animation-fill-mode: both !important;
-  animation-fill-mode: both !important;
+    -webkit-animation-name: fadeIn !important;
+    -moz-animation-name: fadeIn !important;
+    animation-name: fadeIn !important;
+    -webkit-animation-duration: 1s !important;
+    -moz-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
 }
 
 @-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 /* Comments */
 
 ._3-a6._1blz .UFICommentActorAndBody {
-  background: #fafafa !important;
+    background: #fafafa !important;
 }
 
 ._605a ._5v9k .UFIAddComment .UFIImageBlockImage,
 ._605a ._5v9k .UFIComment .UFIImageBlockImage {
-  border-radius: 100px !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf;
+    border-radius: 100px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf;
 }
 
 ._3l3x span {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
 
 .fcg,
 a.uiLinkSubtle,
 ._538r {
-  color: #000 !important;
+    color: #000 !important;
 }
 
 ._3mf5 {
-  box-shadow: 0 4px 4px -2px #bfbfbf;
+    box-shadow: 0 4px 4px -2px #bfbfbf;
 }
 
 ._4efk {
-  border-left: 2px dashed #039BE5 !important;
-  margin-left: -2px !important;
-  padding-left: 8px !important;
+    border-left: 2px dashed #039BE5 !important;
+    margin-left: -2px !important;
+    padding-left: 8px !important;
 }
 
 /* Pinned comment */
 
 .UFIContainer .UFILivePinnedComment.UFIComment {
-  margin: 20px !important;
-  padding: 2%;
-  border: none !important;
+    margin: 20px !important;
+    padding: 2%;
+    border: none !important;
 }
 
 /* Comments color */
@@ -313,56 +324,56 @@ a.uiLinkSubtle,
 .UFIRow,
 ._sg1,
 ._5vsj ._1g5v+._4arz {
-  background-color: #fff !important;
+    background-color: #fff !important;
 }
 
 /*Suggested Pages & Suggested Groups*/
 
 #pagelet_ego_pane>div:nth-child(1)>div,
 #pagelet_ego_pane>div:nth-child(2)>div,
-#pagelet_ego_pane > div:nth-child(3)>div,
+#pagelet_ego_pane>div:nth-child(3)>div,
 #homepage_panel_pagelet,
 #pagelet_ego_contextual_group>div>div,
 #pagelet_gaming_destination_rhc,
 a.fbNubButton,
 #fbPhotoSnowliftDetails>div._5ciw.rhcFooter,
 #contentArea>div._63_q {
-  display: /*[[toggle-display]]*/;
+    display: var(--toggle-display);
 }
 
 ._64b {
-  padding: 0 !important;
+    padding: 0 !important;
 }
 
 ._4-u2 ._5v6e .cardRightCol ._4-u8 {
-  height: inherit !important;
+    height: inherit !important;
 }
 
 .newsFeedComposer ._5v6e .home_right_column,
 ._268y {
-  min-height: inherit !important;
+    min-height: inherit !important;
 }
 
 ._583- {
-  background: none !important;
-  border-radius: 100px !important;
+    background: none !important;
+    border-radius: 100px !important;
 }
 
 ._583- img {
-  border-radius: 100px !important;
+    border-radius: 100px !important;
 }
 
 ._6wl {
-  background: #64DD17 !important;
-  background-color: #64DD17 !important;
-  border-color: #64DD17 !important;
+    background: #64DD17 !important;
+    background-color: #64DD17 !important;
+    border-color: #64DD17 !important;
 }
 
 ._6wl:hover {
-  background-color: /*[[header-color]]*/ !important;
-  background-image: none !important;
-  border-bottom: 1px solid /*[[header-color]]*/ !important;
-  box-shadow: 0 4px 4px -2px /*[[header-color]]*/ !important;
+    background-color: var(--header-color) !important;
+    background-image: none !important;
+    border-bottom: 1px solid var(--header-color) !important;
+    box-shadow: 0 4px 4px -2px var(--header-color) !important;
 }
 
 /* Chat effect */
@@ -370,65 +381,66 @@ a.fbNubButton,
 ._d97,
 ._d97 span,
 ._o46._3i_m ._3058 {
-  -webkit-animation-name: slideInUp !important;
-  -moz-animation-name: slideInUp !important;
-  animation-name: slideInUp !important;
-  -webkit-animation-duration: 300ms !important;
-  -moz-animation-duration: 300ms !important;
-  animation-duration: 300ms !important;
-  -webkit-animation-fill-mode: both !important;
-  -moz-animation-fill-mode: both !important;
-  animation-fill-mode: both !important;
+    -webkit-animation-name: slideInUp !important;
+    -moz-animation-name: slideInUp !important;
+    animation-name: slideInUp !important;
+    -webkit-animation-duration: 300ms !important;
+    -moz-animation-duration: 300ms !important;
+    animation-duration: 300ms !important;
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
 }
 
 @keyframes slideInUp {
-  from {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
+    from {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .slideInUp {
-  animation-name: slideInUp;
+    animation-name: slideInUp;
 }
 
 /* End of the addition animation */
 
 html ._6-d .fbTimelineSection {
-  border: none !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border: none !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
 ._tun,
 ._kj3,
 ._z6j {
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  border: none !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border: none !important;
 }
 
 /* Messages */
 
 ._2w7 img {
-  border-radius: 50px !important;
+    border-radius: 50px !important;
 }
 
 ._1ht1._1ht2 {
-  background-color: /*[[header-color]]*/ !important;
+    background-color: var(--header-color) !important;
 }
 
 ._1ht7,
 ._1htf span {
-  color: #000000 !important;
+    color: #000 !important;
 }
 
 /* Seen */
 
 ._510g {
-  color: #000000 !important;
-  font-weight: bold;
+    color: #000 !important;
+    font-weight: bold;
 }
 
 /* Profile */
@@ -456,41 +468,41 @@ a._8o>img,
 #hometown>img,
 #pages_side_column>div>div>div:nth-child(2)>div>div._4-u2._2l01._4-u8>div:nth-child(2)>ul>div:nth-child(4)>table>tbody>tr>td._51m-.vMid._2fb4._2fb5>img,
 ._5j09>div>a>div {
-  background: transparent !important;
-  border-radius: 100px !important;
-  border: none !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    background: transparent !important;
+    border-radius: 100px !important;
+    border: none !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
 #hometown>div>div._4bl9 {
-  height: 40px !important;
+    height: 40px !important;
 }
 
 /* Pointer for "was with" on map */
 
 ._4-u2 ._4-u8>div._4-u3._2ph_>span>div._qty {
-  height: 60px !important;
+    height: 60px !important;
 }
 
 .friendBrowserPhotoCrop {
-  background: transparent !important;
+    background: transparent !important;
 }
 
 ._3hv,
 ._bth {
-  border-radius: 60px !important;
-  border: none !important;
+    border-radius: 60px !important;
+    border: none !important;
 }
 
 ._3hvt:after,
 ._38vo:after,
 ._5z79::before {
-  border: none !important;
+    border: none !important;
 }
 
 ._31o4 {
-  border-radius: 60px !important;
-  border: none !important;
+    border-radius: 60px !important;
+    border: none !important;
 }
 
 ._4ld-,
@@ -499,86 +511,86 @@ a._8o>img,
 ._2akn img,
 ._4v9u img,
 ._4tdw img {
-  border-radius: 60px !important;
-  border: none !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border-radius: 60px !important;
+    border: none !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
 .fbChatTypeahead ._4p-s {
-  background-color: #FFF !important;
+    background-color: #fff !important;
 }
 
 ._3s6x {
-  background: none !important;
-  color: #F5F5F5 !important;
-  text-shadow: 0px 0px 7px #000000 !important;
+    background: none !important;
+    color: #F5F5F5 !important;
+    text-shadow: 0px 0px 7px #000 !important;
 }
 
 ._34mw,
 ._3s6x div {
-  font-weight: bolder !important;
-  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-  text-align: center !important;
+    font-weight: bolder !important;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-align: center !important;
 }
 
 ._s0,
 ._7ls,
 ._7l2,
 ._rw img {
-  border-radius: 200px !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
-  border: none !important;
+    border-radius: 200px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border: none !important;
 }
 
 .img .UFIActorImage ._54ru img {
-  border-radius: 60px !important;
+    border-radius: 60px !important;
 }
 
 ._55lq:after {
-  border: none !important;
+    border: none !important;
 }
 
 .fbChatSidebar {
-  background-color: #FFFFFF !important;
+    background-color: #fff !important;
 }
 
 #fbTimelineHeadline .profilePicThumb {
-  background: none !important;
+    background: none !important;
 }
 
 ._5clo {
-  border: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 ._5clp {
-  outline: none !important;
+    outline: none !important;
 }
 
 ._54ru {
-  border-radius: 60px !important;
+    border-radius: 60px !important;
 }
 
 /* Pages */
 
 ._3f-h._3f-i,
 ._1i81 {
-  border-color: #03a9f4 !important;
+    border-color: #03a9f4 !important;
 }
 
 ._qa1,
 ._2-0o {
-  border: none !important;
+    border: none !important;
 }
 
 .uiButton {
-  transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .uiButton:hover {
-  box-shadow: 0 4px 4px -2px #bfbfbf;
-  transition: all 300ms ease-in-out;
+    box-shadow: 0 4px 4px -2px #bfbfbf;
+    transition: all 300ms ease-in-out;
 }
 
 /* Groups */
@@ -586,46 +598,48 @@ a._8o>img,
 /* Add members to the groups */
 
 ._2-fx {
-  border-radius: 100px;
-  box-shadow: 0px 4px 4px -2px #bfbfbf;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px -2px #bfbfbf;
 }
 
 div.uiTypeaheadView .selected {
-  background-color: #0084ff !important;
-  border-color: #0084ff !important;
-  transition: all 300ms ease-in-out;
+    background-color: #0084ff !important;
+    border-color: #0084ff !important;
+    transition: all 300ms ease-in-out;
 }
 
 ._5ks6 {
-  height: 3.5px !important;
+    height: 3.5px !important;
 }
 
 ._5l2b a {
-  display: flex !important;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 5%;
+    display: flex !important;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 5%;
 }
 
 ._5l2b a img {
-  width: 200px !important;
-  height: 200px !important;
+    width: 200px !important;
+    height: 200px !important;
 }
 
 ._4-jy {
-  height: 90px !important;
+    height: 90px !important;
 }
 
 /* Some adittional fixes */
 
-._55ln:focus, ._55ln:hover, li.selected ._55ln {
+._55ln:focus,
+._55ln:hover,
+li.selected ._55ln {
     background-color: #f9f9f9 !important;
     box-shadow: 1px 0 0 #f9f9f9 inset !important;
     text-decoration: none;
 }
 
 ._3qe1 li._3qe0 {
-  border-color: #4a90e2 !important;
+    border-color: #4a90e2 !important;
 }
 
 ._nft,
@@ -634,109 +648,99 @@ div.uiTypeaheadView .selected {
 ._412e:after,
 .fbxWelcomeBoxBlock:after,
 ._2yq ._4-u2::before {
-  border: none !important;
-  box-shadow: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 ._3yq- {
-  padding: 0 !important;
+    padding: 0 !important;
 }
 
 ._3_gi .uiSearchInput::after,
 ._3_gi .uiTypeahead::after,
 ._3_gi ._58ak::after {
-  background: #FFFFFF !important;
-  border: 1px solid rgba(0, 0, 0, .30) !important;
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, .30) !important;
 }
 
 .menu_login_container .login_form_label_field a {
-  color: #ffffff !important;
+    color: #fff !important;
 }
 
 ._517h:hover,
 ._59pe:focus,
 ._59pe:hover {
-  box-shadow: 0px 4px 4px -2px #bfbfbf;
+    box-shadow: 0px 4px 4px -2px #bfbfbf;
 }
 
 ._4jd_ img,
 ._4je2 {
-  border-radius: 100px !important;
-  box-shadow: 0px 4px 4px -2px #bfbfbf;
-  padding: 0 !important;
-  margin-left: 4%;
-  margin-right: 4%;
+    border-radius: 100px !important;
+    box-shadow: 0px 4px 4px -2px #bfbfbf;
+    padding: 0 !important;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 ._79m {
-  border-radius: 100px !important;
+    border-radius: 100px !important;
 }
 
 ._4lh ._2-d1 {
-  background: transparent !important;
+    background: transparent !important;
 }
 
 ._70k {
-  background: #fff;
+    background: #fff;
 }
 
 /* Some adittional fixes - inbox profile pics on main page */
 
 ._1y2l ._4qeb {
-  height: inherit !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf;
+    height: inherit !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf;
 }
 
 ._1y2l ._4qeb>div {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 ._55lt img {
-  border-radius: 100px;
+    border-radius: 100px;
 }
-
-
-/* Reactions */
-
-
-/*[[enable-reactions]]*/
-
-
-/* Features Test */
-
 
 /* Chat */
 
 ._568- {
-  color: #000 !important;
+    color: #000 !important;
 }
 
 ._2v5j {
-  opacity: /*[[toggle-chat]]*/;
+    opacity: var(--toggle-chat);
 }
 
 ._5w1r span {
-  opacity: 1;
-  font-weight: bold !important;
+    opacity: 1;
+    font-weight: bold !important;
 }
 
 ._qhr ._55lq {
-  width: 32px !important;
-  height: auto !important;
+    width: 32px !important;
+    height: auto !important;
 }
 
 ._qhr ._55lq,
 ._605a ._12um ._55lq {
-  width: 32px !important;
-  height: auto !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf;
+    width: 32px !important;
+    height: auto !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf;
 }
 
 /* Notifications Avatars */
 
 ._ors ._33h {
-  border-radius: 50px !important;
-  box-shadow: 0 4px 4px -2px #bfbfbf !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 4px -2px #bfbfbf !important;
 }
 
 /* Video player */
@@ -745,33 +749,33 @@ div.uiTypeaheadView .selected {
 ._2w_u ._3pat,
 ._2w_u ._3par,
 ._gn0._gn1 ._gn5 {
-  background-color: /*[[header-color]]*/ !important;
-  box-shadow: 0 0 10px 2px /*[[header-color]]*/;
-  transition: 200ms all ease-in-out !important;
+    background-color: var(--header-color) !important;
+    box-shadow: 0 0 10px 2px var(--header-color);
+    transition: 200ms all ease-in-out !important;
 }
 
 ._132c {
-  background-color: /*[[header-color]]*/ !important;
+    background-color: var(--header-color) !important;
 }
 
 ._38a2 {
-  transition: 300ms all ease-in-out !important;
+    transition: 300ms all ease-in-out !important;
 }
 
 ._38a2:hover {
-  transition: 300ms all ease-in-out !important;
-  box-shadow: 0 0px 10px 5px /*[[header-color]]*/ !important;
-  z-index: 1000 !important;
+    transition: 300ms all ease-in-out !important;
+    box-shadow: 0 0px 10px 5px var(--header-color) !important;
+    z-index: 1000 !important;
 }
 
 ._5g7d {
-  box-shadow: 0px 4px 4px -1px /*[[header-color]]*/ !important;
+    box-shadow: 0px 4px 4px -1px var(--header-color) !important;
 }
 
 /* Fix for the Chrome fullscreen issue. Also removed extra props from "Shadows on boxes" */
 
 ._1hwh {
-  margin-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 /* Pictures */
@@ -781,38 +785,40 @@ div.uiTypeaheadView .selected {
 .uiScrollableAreaContent,
 .fbPhotosSnowliftFeedback,
 ._2-sx img {
-  -webkit-animation-name: fadeIn !important;
-  -moz-animation-name: fadeIn !important;
-  animation-name: fadeIn !important;
-  -webkit-animation-duration: 500ms !important;
-  -moz-animation-duration: 500ms !important;
-  animation-duration: 500ms !important;
-  -webkit-animation-fill-mode: both !important;
-  -moz-animation-fill-mode: both !important;
-  animation-fill-mode: both !important;
+    -webkit-animation-name: fadeIn !important;
+    -moz-animation-name: fadeIn !important;
+    animation-name: fadeIn !important;
+    -webkit-animation-duration: 500ms !important;
+    -moz-animation-duration: 500ms !important;
+    animation-duration: 500ms !important;
+    -webkit-animation-fill-mode: both !important;
+    -moz-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
 }
 
 @-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 
@@ -822,24 +828,24 @@ div.uiTypeaheadView .selected {
 ._4-u2,
 ._4__g.escapeHatchMinimal,
 ._2w3>._30f {
-  border-top: 1px solid /*[[header-color]]*/ !important;
-  border-radius: 0px !important;
+    border-top: 1px solid var(--header-color) !important;
+    border-radius: 0px !important;
 }
 
 ._3cz {
-  background: #fafafa !important;
+    background: #fafafa !important;
 }
 
 
 /* Glowing status indicator */
 
 ._568z span {
-  animation: pulse-highlight 2s infinite
+    animation: pulse-highlight 2s infinite
 }
 
 @-webkit-keyframes pulse-highlight {
     0% {
-        box-shadow: 0 0 0 0 rgba(184,214,244,0.4)
+        box-shadow: 0 0 0 0 rgba(184, 214, 244, 0.4)
     }
 
     70% {
@@ -853,7 +859,7 @@ div.uiTypeaheadView .selected {
 
 @keyframes pulse-highlight {
     0% {
-        box-shadow: 0 0 0 0 rgba(184,214,244,0.4)
+        box-shadow: 0 0 0 0 rgba(184, 214, 244, 0.4)
     }
 
     70% {
@@ -870,39 +876,39 @@ div.uiTypeaheadView .selected {
 ._53s,
 .fbPhotoCurationControlWrapper,
 ._2eea {
-  transform: scale(1) !important;
-  transition: 300ms all ease-in-out !important;
+    transform: scale(1) !important;
+    transition: 300ms all ease-in-out !important;
 }
 
 ._53s:hover,
 .fbPhotoCurationControlWrapper:hover,
 ._2eea:hover {
-  transform: /*[[toggle-scale]]*/;
-  transition: 300ms all ease-in-out !important;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
-  z-index: 1 !important;
+    transform: var(--toggle-scale);
+    transition: 300ms all ease-in-out !important;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
+    z-index: 1 !important;
 }
 
 /* Feeling/Activity, Check In */
 
 ._599m,
 ._5u91 {
-  border: none !important;
-  background-color: inherit !important;
+    border: none !important;
+    background-color: inherit !important;
 }
 
 ._599m:hover,
 ._599m:active,
 ._5u91:hover,
 ._5u91:active {
-  background-color: #039BE5 !important;
-  border: none !important;
+    background-color: #039BE5 !important;
+    border: none !important;
 }
 
 /* Games */
 
 ._6gug {
-  box-shadow: 0px 4px 4px -2px #bfbfbf;
+    box-shadow: 0px 4px 4px -2px #bfbfbf;
 }
 
 /* Page plugins (Embedded on other websites) */
@@ -910,23 +916,23 @@ div.uiTypeaheadView .selected {
 ._1drm._1ds3 ._1drn,
 ._54ru,
 ._5pat ._5sq7 {
-  border-radius: 100px !important;
-  box-shadow: 0px 4px 4px -2px #bfbfbf !important;
-  outline: none !important;
+    border-radius: 100px !important;
+    box-shadow: 0px 4px 4px -2px #bfbfbf !important;
+    outline: none !important;
 }
 
 /* Docs */
 
 ._4-u2>._4-u3:last-child {
-  padding: 1em;
+    padding: 1em;
 }
 
 /* Watch */
 
 ._6x7x {
-  box-shadow: 0 4px 4px -2px #bfbfbf;
+    box-shadow: 0 4px 4px -2px #bfbfbf;
 }
 
 ._2yua:active {
-  background: /*[[header-color]]*/ !important;
+    background: var(--header-color) !important;
 }
