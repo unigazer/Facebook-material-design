@@ -920,3 +920,13 @@ div.uiTypeaheadView .selected {
 ._4-u2>._4-u3:last-child {
   padding: 1em;
 }
+
+/* Watch */
+
+._6x7x {
+  box-shadow: 0 4px 4px -2px #bfbfbf;
+}
+
+._2yua:active {
+  background: /*[[header-color]]*/ !important;
+}
