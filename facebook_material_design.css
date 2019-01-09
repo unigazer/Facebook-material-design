@@ -2,7 +2,6 @@
     --header-color: /*[[header-color]]*/;
     --toggle-animation: /*[[toggle-animation]]*/;
     --toggle-display: /*[[toggle-display]]*/;
-    --toggle-chat: /*[[toggle-chat]]*/;
     --toggle-scale: /*[[toggle-scale]]*/;
 }
 
@@ -714,10 +713,6 @@ li.selected ._55ln {
 
 ._568- {
     color: #000 !important;
-}
-
-._2v5j {
-    opacity: var(--toggle-chat);
 }
 
 ._5w1r span {
