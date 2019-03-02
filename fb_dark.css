@@ -1167,21 +1167,19 @@ color: #bfbfbf !important;
 
 /* Pictures scale */
 
-._53s,
-.fbPhotoCurationControlWrapper,
-._2eea {
-    transform: scale(1) !important;
-    transition: 300ms all ease-in-out !important;
+._4zc-._2eea,
+.fbPhotoCurationControlWrapper {
+    transition: 200ms all linear !important;
 }
 
-._53s:hover,
-.fbPhotoCurationControlWrapper:hover,
-._2eea:hover {
+._4zc-._2eea:hover,
+.fbPhotoCurationControlWrapper:hover {
     transform: scale(1.2) !important;
-    transition: 300ms all ease-in-out !important;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
-    z-index: 1 !important;
+    transition: 200ms all linear !important;
+    box-shadow: 0 0 1px 5px rgba(0, 0, 0, .5);
+    z-index: 999999;
 }
+
 
 /* Page plugins (Embedded on other websites) */
 
