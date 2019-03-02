@@ -873,20 +873,17 @@ li.selected ._55ln {
 
 /* Pictures scale */
 
-._53s,
-.fbPhotoCurationControlWrapper,
-._2eea {
-    transform: scale(1) !important;
-    transition: 300ms all ease-in-out !important;
+._4zc-._2eea,
+.fbPhotoCurationControlWrapper {
+    transition: 200ms all linear !important;
 }
 
-._53s:hover,
-.fbPhotoCurationControlWrapper:hover,
-._2eea:hover {
+._4zc-._2eea:hover,
+.fbPhotoCurationControlWrapper:hover {
     transform: var(--toggle-scale);
-    transition: 300ms all ease-in-out !important;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5) !important;
-    z-index: 1 !important;
+    transition: 200ms all linear !important;
+    box-shadow: 0 0 1px 5px var(--header-color);
+    z-index: 999999;
 }
 
 /* Feeling/Activity, Check In */
