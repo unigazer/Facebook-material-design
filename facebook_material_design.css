@@ -873,16 +873,15 @@ li.selected ._55ln {
 
 /* Pictures scale */
 
-._4zc-._2eea,
+._2eea,
 .fbPhotoCurationControlWrapper {
     transition: 200ms all linear !important;
 }
 
-._4zc-._2eea:hover,
+._2eea:hover,
 .fbPhotoCurationControlWrapper:hover {
     transform: var(--toggle-scale);
     transition: 200ms all linear !important;
-    box-shadow: 0 0 1px 5px var(--header-color);
     z-index: 999999;
 }
 
